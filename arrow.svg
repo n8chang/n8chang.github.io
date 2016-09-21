@@ -1,13 +1,12 @@
-<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In  -->
-<svg version="1.1"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-	 x="0px" y="0px" width="22.6px" height="99.5px" viewBox="0 0 22.6 99.5" style="enable-background:new 0 0 22.6 99.5;"
-	 xml:space="preserve">
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="-374 381 50 40" style="enable-background:new -374 381 50 40;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;stroke:#fff;stroke-miterlimit:10;}
+	.st0{fill:#FFFFFF;}
 </style>
-<defs>
-</defs>
-<path id="XMLID_16_" class="st0" d="M11.3,77.5l10-14.1l-10,34.3l-10-34.3L11.3,77.5z M11.3,83.7V13.1 M11.3,0.5
-	C7.8,0.5,5,3.3,5,6.8s2.8,6.3,6.3,6.3s6.3-2.8,6.3-6.3S14.8,0.5,11.3,0.5z"/>
+<g id="XMLID_114_">
+	<path class="st0" d="M-327.9,385.1l-20.1,32.2l-20.1-32.2l12.8,5c2.3,0.9,4.8,1.4,7.3,1.4s4.9-0.5,7.3-1.4L-327.9,385.1 M-323,381
+		l-18.5,7.2c-2.1,0.8-4.3,1.2-6.5,1.2c-2.2,0-4.4-0.4-6.5-1.2L-373,381l25,40L-323,381L-323,381z"/>
+</g>
 </svg>

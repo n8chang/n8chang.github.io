@@ -124,7 +124,7 @@ a:hover {
 	padding-bottom: 20px;
 }
 .u-twothirds {
-	width: 700px;
+	width: 900px;
 }
 .li-resume{
 	font-size: 16px;
@@ -171,7 +171,7 @@ header {
 	height: 140px;
 	margin-top: 10vh;
 	background: rgba(25, 72, 114, 1.0);
-	*-webkit-transition-duration: 0.6s; 
+	-webkit-transition-duration: 0.6s; 
 	-moz-transition-duration: 0.6s; 
 	-o-transition-duration: 0.6s; 
     transition-duration: 0.6s;
@@ -205,7 +205,46 @@ header img {
 	/*background: #EAF6FA;*/
 }
 .card {
+	position: relative;
 	margin-top: 40px;
+}
+.tooltip {
+	visibility: hidden;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	background: #fff;
+	height: 480px;
+	width: 760px;
+}
+.tooltip h3 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.tooltip: hover, .tooltip h3 {
+	visibility: visible;
+}
+.card-img {
+	float: left;
+}
+.card-title {
+	position: absolute;
+	top: 30px;
+	left: 0px;
+	padding: 40px 50px 30px;
+}
+.card-caption {
+	position: absolute;
+	bottom: 30px;
+	left: 35px;
+	padding: 40px;
+	border: solid 2px #fff;
+	background: rgba(255, 255, 255, 0.2);
+}
+figcaption {
+	max-width: 500px;
 }
 /* about */
 .aboutme{
