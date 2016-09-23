@@ -7,24 +7,43 @@
 	<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700|Open+Sans:400, 400i,600" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/style.css">
-
-	
+	<script src="https://code.jquery.com/jquery-latest.js"></script>
+		<script type="text/javascript">
+		(function($) {          
+		    $(document).ready(function(){                    
+		        $(window).scroll(function(){                          
+		            if ($(this).scrollTop() > 400) {
+		                $('#nav').fadeIn(500);
+		            } else {
+		                $('#nav').fadeOut(500);
+		            }
+		        });
+		    });
+		})(jQuery);
+		</script>
 </head>
 <body>
 	<header>
-		<div class="hero">
-			<div class="container">
-				<img class="hero-logo" src="n_logov2.svg" alt="Nate Chang UX Designer logo">
-				<div class="herotext">
-					<h1 class="u-open ">Howdy</h1>
-					<h2 class="u-inlineblock">I'm Nate and I make things</h2>
-				</div>
-				<div class="herocta">
-					<a class="button u-white" href="#about">About me</a>
-					<a class="button u-white" href="#work">My work</a>
-				</div>
-				<img id="scrollarrow" class="u-block u-center u-100pad-top" src="arrow.svg" alt="Scroll down for more">
+		<div id="nav">
+			<div class="navlogo">
+				<img src="n_logov2.svg" alt="Nate Chang UX designer N logo">
 			</div>
+			<ul>
+				<li class="navlink"><a href="#about" class="u-white">about</a></li>
+				<li class="navlink"><a href="#work" class="navlink u-white">work</a></li>
+			</ul>				
+		</div>
+		<div class="hero container">
+			<img class="hero-logo u-40margin-top" src="n_logov2.svg" alt="Nate Chang UX Designer logo">
+			<div class="herotext">
+				<h1 class="u-open">Howdy</h1>
+				<h1 class="u-inlineblock">I'm Nate and I make things</h1>
+			</div>
+			<div class="herocta">
+				<a class="button u-white" href="#about">About me</>
+				<a class="button u-white" href="#work">My work</a>
+			</div>
+			<img id="scrollarrow" class="u-block u-center " src="arrow.svg" alt="Scroll down for more">
 		</div>
 	</header>
 	<main>
@@ -180,5 +199,6 @@
 			</div>
 		</div>
 	</footer>
+
 </body>
 </html>

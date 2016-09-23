@@ -41,12 +41,12 @@ h1, h2, h3, h4, h5{
 	color: #4a4a4a;
 }
 h1 {
-	font-size: 54px;
+	font-size: 48px;
 	letter-spacing: 1px;
-	font-weight: 600;
+	font-weight: 400;
 }
 h2 {
-	font-size: 42px;
+	font-size: 40px;
 	color: #4a4a4a;
 }
 .h-2-quote {
@@ -55,7 +55,7 @@ h2 {
 	color: #4a4a4a;
 }
 h3 {
-	font-size: 28px;
+	font-size: 32px;
 	color: #4a4a4a;
 }
 h4 {
@@ -123,6 +123,9 @@ a:hover {
 .u-20pad-bottom{
 	padding-bottom: 20px;
 }
+.u-40margin-top {
+	margin-top: 40px;
+}
 .u-twothirds {
 	width: 900px;
 }
@@ -159,12 +162,14 @@ a:hover {
 header {
 	text-align: center;
 	margin: 0 auto;
+	min-height: 730px;/* change for mobile*/
+	background: #fab192;
 }
 .hero{
 	height: 100vh;
 	position: relative;
 	background: #fab192;
-	padding-bottom: 30px;
+	padding-bottom: 40px;
 }
 .hero-logo {
 	width: 140px;
@@ -186,17 +191,41 @@ header {
 	display: inline-block;
 	margin: 5vh auto 0;
 }
-header img {
-	margin-top: 40px;
+#nav {
+	position: fixed;
+	top:10px;
+	width: 100%;
+	margin: 0 auto;
+	height:80px;
+	z-index:9999;
+	display: none;
+}
+#nav ul{
+	float: right;
+}
+.navlogo{
+	float: left;
+}
+.navlogo img{
+	padding-left: 20px;
+	height: 45px;
+	width: 45px;
+}
+.navlink {
+	display: inline-block;
+	padding: 0px 20px;
+	font-size: 18px;
+}
+.navlink:last-child {
+	padding-right: 20px;
 }
 #scrollarrow {
 	position: absolute;
-	height: 120px;
-	width: 40px;
-	bottom: 30px;
+	height: 100px;
+	width: 30px;
+	bottom: 10px;
 	left: 0;
 	right: 0;
-
 }
 /* work */
 .worksection {
@@ -285,7 +314,23 @@ footer {
 	background: #194872;
 	height: 100px;
 }
+@media (max-height: ){
 
+}
+@media (max-width: 1024px) {
+	.container {
+	width: 1000px;
+	margin: 0 auto;
+	}
+	#nav{
+		width: 1000px;
+		margin: 0 auto;
+	}
+	.resumebutton {
+	margin-top: 60px;
+	}
+}
+@media (max-width: )
 
 
 
