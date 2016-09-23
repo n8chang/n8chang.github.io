@@ -84,6 +84,15 @@ a{
 a:hover {
 	color: #194872;
 }
+/*p a{
+	text-decoration: none;
+	color: #f4717e;
+	-webkit-transition-duration: 0.3s; /* Safari 
+    transition-duration: 0.3s;
+}
+p a:hover {
+	color: #194872;
+} */
 /* utility*/
 .clearfix:after {
   content: '';
@@ -175,13 +184,15 @@ header {
 	width: 140px;
 	height: 140px;
 	margin-top: 10vh;
+}
+.logo {
 	background: rgba(25, 72, 114, 1.0);
 	-webkit-transition-duration: 0.6s; 
 	-moz-transition-duration: 0.6s; 
 	-o-transition-duration: 0.6s; 
     transition-duration: 0.6s;
 }
-.hero-logo:hover {
+.logo:hover {
 	background: rgba(255, 255, 255, 0.3);
 }
 .herotext {
@@ -193,23 +204,26 @@ header {
 }
 #nav {
 	position: fixed;
-	top:10px;
+	top:0;
 	width: 100%;
 	margin: 0 auto;
-	height:80px;
+	background: rgba(255, 255, 255, 0.6);
+	height:60px;
 	z-index:9999;
 	display: none;
 }
 #nav ul{
 	float: right;
+	margin-top: 16px;
 }
 .navlogo{
 	float: left;
 }
 .navlogo img{
-	padding-left: 20px;
-	height: 45px;
-	width: 45px;
+	margin-left: 20px;
+	margin-top: 7px;
+	height: 46px;
+	width: 46px;
 }
 .navlink {
 	display: inline-block;
@@ -217,7 +231,7 @@ header {
 	font-size: 18px;
 }
 .navlink:last-child {
-	padding-right: 20px;
+	padding-right: 30px;
 }
 #scrollarrow {
 	position: absolute;
