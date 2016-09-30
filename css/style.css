@@ -4,7 +4,7 @@ natechangdesign.com css styles
 Colors
 	--light-salmon: #fab192; hero
 	--dark-pink: #f4717e; links
-	--rosy-pink: #FFC0C0; about
+	--rosy-pink: #FFCCCC; about
 	--navy: #2B5165; accent
 	--green-navy: #1F7984
 	--blue-dark: #194872
@@ -284,7 +284,7 @@ figcaption {
 }
 .aboutsection {
 	padding-bottom: 100px;
-	background: #FFC0C0;
+	background: #FFCCCC;
 }
 .bio {
 	width: 50%;
