@@ -12,7 +12,7 @@
 		(function($) {          
 		    $(document).ready(function(){                    
 		        $(window).scroll(function(){                          
-		            if ($(this).scrollTop() > 400) {
+		            if ($(this).scrollTop() > 175) {
 		                $('#nav').fadeIn(500);
 		            } else {
 		                $('#nav').fadeOut(500);
@@ -28,22 +28,23 @@
 			<div class="navlogo">
 				</a><img src="n_logov2.svg" class="logo" alt="Nate Chang UX designer N logo">
 			</div>
-			<ul>
+			<ul class="nav_menu">
 				<li class="navlink"><a href="#about">about</a></li>
 				<li class="navlink"><a href="#work">work</a></li>
 			</ul>				
 		</div>
 		<div class="hero container">
-			<img class="hero-logo logo u-40margin-top" src="n_logov2.svg" alt="Nate Chang UX Designer logo">
-			<div class="herotext">
-				<h1 class="u-open">Howdy</h1>
-				<h1 class="u-inlineblock">I'm Nate and I make things</h1>
-			</div>
-			<div class="herocta">
+			<div class="u-center">
+				<img class="hero-logo logo u-40margin-top" src="n_logov2.svg" alt="Nate Chang UX Designer logo">
+				<div class="herotext">
+				<h1 class="u-inlineblock u-white">I'm Nate and I make things</h1>
+				</div>
+				<div class="herocta">
 				<a class="button u-white" href="#about">About me</>
 				<a class="button u-white" href="#work">My work</a>
+				</div>
+				<img id="scrollarrow" class="u-block u-center " src="arrow.svg" alt="Scroll down for more">
 			</div>
-			<img id="scrollarrow" class="u-block u-center " src="arrow.svg" alt="Scroll down for more">
 		</div>
 	</header>
 	<main>
@@ -55,7 +56,7 @@
 					<h4 class="u-open">About</h4>
 					<h2 class="u-white">Nate Chang</h2>
 					<img class="u-inlineblock" src="" alt="a picture of nate chang">
-					<div class="bio u-inlineblock clearfix">
+					<div class="u-60per u-inlineblock clearfix">
 						<p>I’m a UX designer who approaches design with a background as informed by the humanities as working with my hands.  Schooling in New York for history and English literature taught me how to analyze with empathy. Teaching myself <a href="http://www.neverbeenbetter.co" title="never been better co leathergoods &amp; leatherbads" target="_blank"">leatherworking</a> in Atlanta and starting a business instilled in me resourcefulness and sharpened my eye for design. My time at <a href="http://designation.io/" title="DESIGNATION.io" target="_blank"">DESIGNATION</a> in Chicago taught me innumerable skills. I embrace the constraints of medium, resources at hand, and diversity of human experiences to practice user-centered design thinking.</p>
 						<br>
 						<p>I’m always teaching myself new things, these days it’s bike repair and stepping up my coffee game. Get in touch if you want to talk design, food, <a href="http://www.claremont.org/crb/article/bourbon-neat/" title="Walker Percy - Bourbon, Neat Essay" target="_blank"">bourbon (neat)</a>, the frustrating joys of vintage Mercedes-Benzes repair, or pop culture and social change.</p>
@@ -73,7 +74,7 @@
 					</ul>
 					</div>
 				</div>
-				<div id="resume">
+				<div id="resume" class="u-flexstart">
 					<div class="resume-column">
 						<h4 class="u-white u-20pad-bottom">Capabilities</h4>
 						<ul class="u-300"><li class="li-resume">Personas</li>
@@ -88,7 +89,7 @@
 							<li class="li-resume">Usability testing</l	i>
 						</ul>
 					</div>
-					<div class="resume-column2">
+					<div class="resume-column">
 						<h4 class="u-white u-20pad-bottom">Tools</h4>
 						<ul class="u-300">
 							<li class="li-resume">Sketch</li>
@@ -149,9 +150,7 @@
 			<div class="container">
 				<div class="u-indent u-40pad-top">
 					<h4 class="u-open">Work</h4>
-					<div class="u-twothirds">
-						<h2 class="">How I identify problems and design solutions</h2>
-					</div>
+						<h2 class="u-80per">How I identify problems and design solutions</h2>
 					<article class="card clearfix">
 						<a href="">
 							<h2 class="card-title u-white">The Graide Network</h2>
