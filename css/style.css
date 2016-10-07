@@ -366,6 +366,10 @@ footer {
 	.nav_menu {
 		justify-content: space-around;
 	}
+	.resume-column {
+		width: 250px;
+	
+	}
 }
 
 
