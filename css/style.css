@@ -352,7 +352,7 @@ footer {
 }
 
 /** Responsivable tings **/
-/*Narrow Desktop 1024 container*/
+/*Narrow Desktop*/
 @media (max-width: 1024px) {
 	.resumebutton {
 	margin-top: 60px;
@@ -360,15 +360,50 @@ footer {
 }
 /*Tablet 800px width*/
 @media (max-width: 800px) {
+	body {
+		font-size: 18px;
+	}
 	.container {
 		width: 95%;
 	}
+	/* Text styles */
+h1, h2, h3, h4, h5 {
+	font-family: 'Lora';
+}
+h1 {
+	font-size: 48px;
+}
+h2 {
+	font-size: 40px;
+	color: #4a4a4a;
+}
+.h-2-quote {
+	font-size: 32px;
+	color: #4a4a4a;
+}
+h3 {
+	font-size: 32px;
+	color: #4a4a4a;
+}
+h4 {
+	font-size: 26px;
+	color: #4a4a4a;
+}
+h5 {
+	font-size: 20px;
+	color: #4a4a4a;
+}
+h6 {
+	font-size: 16px;
+}
+p {
+	font-weight: 300;
+}
 	.nav_menu {
 		justify-content: space-around;
 	}
 	.resume-column {
 		width: 250px;
-	
 	}
 }
 
