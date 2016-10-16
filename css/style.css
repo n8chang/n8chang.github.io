@@ -335,20 +335,26 @@ figcaption {
 .aboutpic {
 	position: relative;
 	display: inline;
-}
-.aboutpic img {
 	width: 250px;
 	height: 350px;
 	margin: 0 20px 10px 0;
 }
+.aboutpic img {
+	display: inline-block;
+	width: 250px;
+	height: 350px;
+}
 .aboutpichover {
 	position: absolute;
 	z-index: 10000;
-	top: 0;
-	left: 0;
+	top: -335px;
+	left: 0px;
 	opacity: 0;
 }
 .aboutpichover:hover {
+	opacity: 1;
+}
+.aboutpichover:active {
 	opacity: 1;
 }
 .linklist {
