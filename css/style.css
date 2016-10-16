@@ -329,10 +329,28 @@ figcaption {
 .aboutsection {
 	background: #FFCCCC;
 }
-/*.bio {
-	width: 50%;
-	margin: 50px 20px;
-}*/
+.bio {
+	vertical-align: text-top;
+}
+.aboutpic {
+	position: relative;
+	display: inline;
+}
+.aboutpic img {
+	width: 250px;
+	height: 350px;
+	margin: 0 20px 10px 0;
+}
+.aboutpichover {
+	position: absolute;
+	z-index: 10000;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+.aboutpichover:hover {
+	opacity: 1;
+}
 .linklist {
 	margin-top: 15px;
 }
