@@ -346,7 +346,7 @@ figcaption {
 }
 .aboutpichover {
 	position: absolute;
-	z-index: 10000;
+	z-index: 999;
 	top: 0px;
 	left: 0px;
 	opacity: 0;
