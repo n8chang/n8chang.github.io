@@ -2,12 +2,11 @@
 natechangdesign.com css styles
 
 Colors
-	--light-salmon: #fab192; hero
+	--light-salmon: #fab192; hero background
+  --light-blue: #EAF6FA; work background
+	--light-pink: #FFCCCC; about background
 	--dark-pink: #f4717e; links
-	--rosy-pink: #FFCCCC; about
-	--navy: #2B5165; accent
-	--green-navy: #1F7984
-	--blue-dark: #194872
+	--blue-dark: #194872; logo, footer, link hover
 	--dark grey: #4a4a4a; type
 	--white: #fff;
 	--black: #000;
@@ -70,12 +69,12 @@ p {
 	font-weight: 300;
 }
 a{
-	
+
 	text-decoration: none;
 	color: #f4717e;
-	-webkit-transition-duration: 0.4s; 
-	-moz-transition-duration: 0.4s; 
-	-o-transition-duration: 0.4s; 
+	-webkit-transition-duration: 0.4s;
+	-moz-transition-duration: 0.4s;
+	-o-transition-duration: 0.4s;
     transition-duration: 0.4s;
     transition-timing-function: ease-in;
 }
@@ -93,7 +92,7 @@ a:hover {
 .button {
 	display: block;
 	width: 20vw;
-	font-size: 20px; 
+	font-size: 20px;
 	font-weight: 300;
 	text-align: center;
 	padding: 20px 45px;
@@ -101,16 +100,16 @@ a:hover {
 	border: solid 1.5px #ffffff;
 	margin-top: 30px;
 	margin-bottom: 30px;
-	-webkit-transition-duration: 0.4s; 
-	-moz-transition-duration: 0.4s; 
-	-o-transition-duration: 0.4s; 
+	-webkit-transition-duration: 0.4s;
+	-moz-transition-duration: 0.4s;
+	-o-transition-duration: 0.4s;
     transition-duration: 0.4s;
     transition-timing-function: ease-in;
 }
 .button:hover{
 	color: #fff;
 	background: rgba(25, 72, 114, 1.0);
-	border: solid 1.5px #fff; 
+	border: solid 1.5px #fff;
 }
 /* utility*/
 .clearfix:after {
@@ -138,11 +137,14 @@ a:hover {
 .u-white{
 	color: #fff;
 }
+.u-hidden{
+	display: none;
+}
 .u-quote {
 	font-style: italic;
 }
 .u-open {
-	font-family: 'Roboto', 'OpenSans', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 .u-indent{
 	margin-left: 60px;
@@ -199,9 +201,9 @@ header {
 }
 .logo {
 	/*background: rgba(25, 72, 114, 1.0);*//*blue background*/
-	-webkit-transition-duration: 0.6s; 
-	-moz-transition-duration: 0.6s; 
-	-o-transition-duration: 0.6s; 
+	-webkit-transition-duration: 0.6s;
+	-moz-transition-duration: 0.6s;
+	-o-transition-duration: 0.6s;
     transition-duration: 0.6s;
 }
 .logo:hover {
@@ -222,7 +224,9 @@ header {
 	background: rgba(255, 255, 255, 0.9);
 	height:46px;
 	z-index:999999;
-	display: none;
+}
+#nav:hover{
+	display: block;
 }
 .nav_menu {
 	display: -webkit-box;
@@ -476,13 +480,3 @@ footer {
 	padding-bottom: 20px;
 	}
 }
-
-
-
-
-
-
-
-
-
-
