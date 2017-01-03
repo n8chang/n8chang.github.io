@@ -21,7 +21,7 @@ font-family: 'Roboto', sans-serif;
 body{
 	background: #fff;
 	width: 100%;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Open-Sans', sans-serif;
 	font-weight: 400;
 	text-rendering: optimizeLegibility;
 	font-size: 16px;
@@ -35,26 +35,32 @@ body{
 
 /* Text styles */
 h1, h2, h3, h4, h5 {
-	font-family: 'Lora';
+	font-family: 'Neuton', serif;
+	letter-spacing: .02em;
 }
 h1 {
 	font-size: 48px;
+	font-weight: 300;
 }
 h2 {
 	font-size: 40px;
+	font-weight: 300;
 	color: #4a4a4a;
 }
 .h-2-quote {
 	font-size: 32px;
 	color: #4a4a4a;
+	font-weight: 300;
 }
 h3 {
 	font-size: 32px;
 	color: #4a4a4a;
+	font-weight: 300;
 }
 h4 {
 	font-size: 26px;
 	color: #4a4a4a;
+	font-weight: 300;
 }
 h5 {
 	font-size: 20px;
