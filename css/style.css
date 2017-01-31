@@ -29,7 +29,7 @@ body{
 	color: #4a4a4a;
 }
 .container {
-	width: 90vw;
+	width: 60vw;
 	margin: 0 auto;
 }
 
@@ -144,6 +144,9 @@ a:hover {
 .u-indent{
 	margin-left: 60px;
 }
+.u-floatleft{
+	float: left;
+}
 .u-uppercase{
 	text-transform: uppercase;
 }
@@ -232,25 +235,32 @@ a:hover {
     left: 4vw;
 }
 .sticky-active h3, .sticky-active h2{
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
 	font-size: 22px;
 }
 .sticky-parked
 {
 	display: none;
     position: absolute;
-    bottom: 0px;
+    bottom: -20px;
 }
 /* header */
 header {
 	text-align: center;
 	margin: 0 auto;
 	min-height: 730px;/* change for mobile*/
-	background: #fab192;
+	/*background: #fab192;*/
 }
 .hero{
 	height: 100vh;
+	width: 100vw;
+	min-height: 100vh;
 	position: relative;
 	background: #fab192;
+	background-attachment: fixed;
 	padding-bottom: 40px;
 }
 .herocontent {
@@ -262,6 +272,10 @@ header {
 .hero-logo {
 	width: 140px;
 	height: 140px;
+}
+.hero-subhead {
+	max-width: 60vw;
+	margin: 0 auto;
 }
 .logo {
 	-webkit-transition-duration: 0.6s;
@@ -413,7 +427,7 @@ figcaption {
 .aboutpic {
 	position: relative;
 	vertical-align: top;
-	display: inline-block;
+	display: inline;
 	width: 250px;
 	height: 350px;
 	margin: 0 20px 10px 0;
@@ -603,10 +617,7 @@ footer {
 	display: inline;
 	width: 250px;
 	height: 350px;
-	margin: 10px auto;
-	}
-	.aboutpic img {
-		margin: 0 auto;
+	margin: 10px 20px 10px 0;
 	}
 	.resume-column {
 	display: inline-block;
