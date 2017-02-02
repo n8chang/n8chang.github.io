@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>The Graide Network Case Study- Nate Chang</title>
+	<title>SVN Video Case Study - Nate Chang</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700|Roboto:400,400i,300,300i" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="https://code.jquery.com/jquery-latest.js"></script>
-		<!-- <script type="text/javascript">
+		<script type="text/javascript">
 		(function($) {
 		    $(document).ready(function(){
 		        $(window).scroll(function(){
@@ -20,98 +20,307 @@
 		        });
 		    });
 		})(jQuery);
-		</script> -->
+		</script>
+		<script type="text/javascript">
+	// Header Scroll script
+			$(document).ready( function() {
+
+    function updateTableHeaders() {
+       $(".persist-area").each(function() {
+       
+           var el             = $(this),
+               offset         = el.offset(),
+               scrollTop      = $(window).scrollTop(),
+               sectionHeader = $(".section-header", this),
+               sectionHeaderWrapper = $(".section-header-wrapper", this),
+               sectionHeaderWrapperOffset = sectionHeaderWrapper.offset(),
+               sectionContent = $(".section-content", this),
+               sectionContentOffset = sectionContent.offset();
+           
+           if ((scrollTop > sectionHeaderWrapperOffset.top))
+           {
+                sectionHeader.addClass("sticky");
+
+                if ((scrollTop < sectionContentOffset.top + sectionContent.outerHeight() - sectionHeader.height()))
+                {
+                    sectionHeader.removeClass("sticky-parked");
+                    sectionHeader.addClass("sticky-active");
+                } else
+                {
+                    sectionHeader.removeClass("sticky-active");
+                    sectionHeader.addClass("sticky-parked");
+                }
+           } else
+           {
+                sectionHeader.removeClass("sticky-active");
+                sectionHeader.removeClass("sticky");
+           }
+
+       });
+    }
+
+    updateTableHeaders();
+    $(window).scroll(updateTableHeaders);
+});
+		</script>
 </head>
 <body>
 	<header>
-		<div id="nav">
+		<div id="nav" class="u-hidden">
+		<div class="navlogoback">
 			<div class="navlogo">
-				<a href="index.html"><img src="img/n_logov2.svg" class="logo" alt="Nate Chang UX designer N logo"></a>
+				<a href="index.html"><img src="img/n_logov3.svg" class="logo" alt="Nate Chang UX designer N logo"></a>
 			</div>
+		</div>
 			<ul class="nav_menu">
 				<li class="navlink"><a href="index.html#about">about</a></li>
 				<li class="navlink"><a href="index.html#work">work</a></li>
 			</ul>
 		</div>
-		<div class="hero container">
-			<div class="u-center">
+		<div class="hero u-center">
 			<div class="herocontent">
 				<div class="herotext">
-					<h1 class="u-inlineblock u-white">Case Name</h1>
-						<h4 class="u-open ">case description sub</h4>
+					<h1 class="u-inlineblock u-white">SVN Distribution</h1>
+						<h4 class="hero-subhead u-open">Designing a platform for video content creators to sell their complete, original content. No ads, no views, just up front payment for quality videos.</h4>
 				</div>
 			</div>
 				<img id="scrollarrow" class="u-block u-center " src="img/arrow.svg" alt="Scroll down for more">
 			</div>
 		</div>
 	</header>
+	<!-- Case study begin -->
 	<main>
 		<article class="case-article">
-			<section class="case-overview">
-				<div class="container">
-						<ul>
-							<li class="case-overview-title">Overview</li>
-							<li class="case-overview-header">Client</li>
-							<li class="case-overview-li">clientname</li>
-						</ul>
-						<ul>
-							<li class="case-overview-header">Role</li>
-							<li class="case-overview-li">UX Designer</li>
-						</ul>
-						<ul>
-							<li class="case-overview-header">Deliverables</li>
-							<li class="case-overview-li"></li>
-							<li class="case-overview-li"></li>
-							<li class="case-overview-li"></li>
-						</ul>
+			<section class="case-summary">
+				<div class="container u-50per">
+					<h2 class="u-open">About</h2>
+					<ul class="case-summary-summary u-block">
+						<li>
+							<h4>Summary</h4>
+						</li>
+				 		<li>
+				 			<p>Native advertising is on the rise and our client is creating a platform for connecting original video content creators with brands interesting in sponsoring content. My team and I conducted research to understand the market and needs of content creators and designed the upload and submission flow to meet client needs for cataloguing videos that respected creators as artists.</p>
+				 		</li>
+					</ul>
+					<div class="u-flexstart">
+						 <div class="resume-column">
+							<ul>
+		 						<li><h4>Client</h4></li>
+		 						<li class="case-summary-item">SVD</li>
+		 						<li>*To protect sensitive aspects of their work, the client’s name has been redacted</li>
+		 					</ul>
+		 					<ul>
+							 	<li><h4>Role</h4></li>
+							 	<li class="case-summary-item">UX Designer</li>
+							</ul>
+						 	<ul>
+							 	<li>
+									<h4>Team</h4>
+							 	</li>
+								<li class="case-summary-item">David Berghoef</li>
+								<li class="case-summary-item">My-Duyen Nguyen</li>
+						 	</ul>
+						</div>
+						<div class="resume-column">
+						 	<ul>
+								<li>
+									<h4>Deliverables</h4>
+								</li>
+								<li>Domain research</li>
+								<li>Competitive analysis</li>
+								<li>User personas</li>
+								<li>Subject matter expert interviews</li>
+								<li>Concept testing</li>
+								<li>Usabiilty testing</li>
+								<li>Mid-fidelity Prototypes</li>
+								<li>Annotated wireframes</li>
+								<li>Paper prototypes</li>
+								<li>Information Architecture</li>
+							</ul>
+						</div>
+					</div><!--end flex list  -->
 				</div>
-				<section class="case-summary container u-60per">
-					<h2>Problem</h2>
-					<h4>Project Brief</h4>
-					<h4>Problem and Approach</h4>
-					<h4>Challenge</h4>
-					<a href="#results" class="casebutton">See the Results</a>
+			</section>	
+			<section class="container">
+				<header class="section-header">
+					<h2>Respecting the artist</h2>
+				</header>
+				<div class="section persist-area">
+					<div class="section-content">
+       				<div class="section-header-wrapper">
+    				<div class="section-header"><h3 class="u-open">Project Brief</h3></div>
+    			</div>
+				<section>
+					<h4>Who</h4>
+					<p>SVD is an early stage startup looking to create a marketplace to give video content creators an alternative to per-view ad-based monetization. For someone making videos, the only way to monetize is to get views on a few major platforms. Most views don’t pay out and views don’t necessarily correlate to quality of content. Our client’s team has a combined background of decades of years in the traditional media industry and identified an opportunity to create a way to incentivize higher quality content on the internet. Specifically, they have a vision to connect brands and producers with completed, independent video content so that creators can be compensated for the work that means the most to them.</p>
+				</section>
+				<section>
+					<h4>What</h4>
+					<p>My team’s task was to design the entire experience for a content creator from sign up and onboarding through receiving an offer for their first purchased project. We created a sign-up, upload and offer acceptance flow that met our client’s requirements for metadata and business compliance, but more importantly, spoke directly to the content creators as visual artists telling stories. The greatest challenge of this project was finding the common ground and translating the users’ creative and career goals with the business needs of SVD and their content purchasing clients.</p>
+					<p>The final designs were equally informed by user familiarity, self-perception, aspirations, goals and business requirements for a scalable and viable product.</p>
+				</section>
+				<section>
+					<h4>Constraints</h4>
+					<ol class="u-ordernumber">
+						<li>2.5 weeks</li>
+						<li>Client had specific metadata capturing needs that we needed to accommodate for video processing</li>
+						<li>Prior to kickoff our client scheduled their Product Manager to come in person for three days of working directly with the team. This put a hard deadline on our first two sprints and shifted our research and concept testing phase forward but also allowed us the opportunity to workshop design with our stakeholder.</li>
+					</ol>
+				</section>
+				</div>
+				</div>
+				<section>
+					<div class="section persist-area">
+						<div class="section-content">
+	       			<div class="section-header-wrapper">
+	    			<div class="section-header"><h3 class="u-open">Design Considerations</h3></div>
+	    			</div>					
+					<h4>Who is a Content Creator?</h4>
+					<p>The client came to us with a strong idea of what needed to be captured and the market proposition of their product from the perspective of their buyers. Our task was to find out who the users were as suppliers. We interviewed users from across the spectrum of filmmakers. From freelance wedding photographers who to 30 year industry veterans who had shown their passion projects at Sundance. We wanted to know a few key things about them:</p>
+					<ul class="u-bullets">
+						<li>How they got started in filmmaking</li>
+						<li>What they were most passionate about</li>
+						<li>How they made a living and if passion projects figured into this revenue</li>
+						<li>How they felt about YouTube, Vimeo, and the current state of video monetization</li>
+					</ul>
+					<p>It turns out that regardless of career trajectory and status, there were trends in what every person believed and wanted from their work.</p>
+					<h4>Quality content tells a story</h4>
+					<p>What is the best way to explain the difference between full-length movies, tv shows, independent shorts or even well shot videos on YouTube with vlogs and viral mobile phone footage? That difference boils down to storytelling. Consistently, we found that all the users we interviewed made a distinction between storytelling video and the kind of videos that <i>usually</i> rack up views on YouTube or Facebook. Specifically, they spoke of the original stories they wanted to tell, whether that meant a documentary video of a concert, a web series or a full-length film.</p>
+					<h4>Exposure is bullsh*t</h4>
+					<p>Our solution had to decondition the user from the paradigm of posting videos online for views.</p>
+					<p>Everyone is frustrated with the monetization incentives that currently exist for video consumption. The users weren’t filming the work they were most proud of with views in mind as much as they were documenting and telling the stories that they found compelling. This was antithetical to the revenue model that currently exists through where you need hundreds of thousands of views on multiple videos a month before you can pay for a night out or maybe utilities.</p>
+					<p>Even content producers who had had several viral videos and saw some YouTube paychecks didn’t post their videos with monetization in mind. They shared their work because they wanted to and often shared to Facebook and YouTube just  to get as many views as possible. The hope was that exposure could lead to paid work, but they were happy to just do the work. </p>
+					<h4>&ldquo;Who do you know?&rdquo;</h4>
+					<p>Our solution would have to speak to those that were used to and had extensive networks as well as those that didn’t. </p>
+					<p>A few interviewees had done sponsored work with brands such as GoPro, Coca Cola and others, which were some of the kinds of deals SVN wants to put users in contact with. However, for our interviewees, these deals had come about not from exposure as much as they had from personal connections they had pulled the right strings to secure gigs through. This was nice for people that had well connected networks, but the goal of SVD was to close that gap for content producers who don’t have access to these resources.</p>
+					</div>
+					</div>
+					<div class="section persist-area">
+						<div class="section-content">
+	       			<div class="section-header-wrapper">
+	    			<div class="section-header"><h3 class="u-open">Designing the Solution</h3></div>
+	    			</div>
+	    			<h4>Meet the users</h4>	
+					<img src="" alt="personas">
+					<p>In order to capture the main needs of users we identified from our research, we identified four main users that spanned a spectrum of career positions and aspirations.</p>
+					<h4>Problem Statement</h4>
+					<p>With these personas established, we came to the central problem we were trying to solve, framing a user-centered design problem that spoke to our client’s business goals.</p>
+					<div class="u-callout">
+						<p>Everyone is passionate about making original content and telling compelling stories, but the most reliable funding is in commercial work. How do we make SVD the platform to bring these two together?</p>
+					</div> 
+					<h4>Design Principles</h4>
+					<ul class="u-callout">
+						<li>
+							<h6 class="u-open">Scalable</h6>
+							<p>From processing one video application to thousands stay scalable and maintain a quality of user experience</p>
+						</li>
+						<li>
+							<h6 class="u-open">Trustworthy</h6>
+							<p>Be transparent about the process and maintain an atmosphere of familiar professionalism</p>
+						</li>
+						<li>
+							<h6 class="u-open">Simplify the business</h6>
+							<p>Handle the business side and let the creators create </p>
+						</li>
+						<li>
+							<h6 class="u-open">Opportunity</h6>
+							<p>Exposure to views is talk, emphasize the exposure to important eyeballs with open wallets</p>
+						</li>
+					</ul>
+					</div>
+					</div>
 				</section>
 			</section>
-			<section class="case-nittygritty container u-60per">
-				<h2>Approach</h2>
-				<div>
-					<h3>Discovery</h3>
+			<section class="container">
+					<div class="section persist-area">
+						<div class="section-content">
+	       			<div class="section-header-wrapper">
+	    			<div class="section-header"><h3 class="u-open">Research</h3></div>
+	    			</div>	
+				<h4>A uniquely familiar experience</h4>
+				<p>We knew that throughout our final product, we would need to make sure that we were speaking to content creators with a sense of pride in their work and the value of their story. SVD&rquo;s experience could not be at all like YouTube, Facebook or even Vimeo because the payment was for quality of content, not views.</p>
+				<p>At the same time, the experience for the user needed to be novel but not confusing and relying on familiar patterns for video uploading online was the quickest way to do that.</p>
+				<h4>Competitive Analysis</h4>
+				<h5>Understanding the landscape</h5>
+				<p>The scope of our competitive landscape research covered the following ccompetitive segments and these are the main takeaways that informed our design process.</p>
+				<h5>The Egalitarian Giants</h5>
+				<p>Current video distribution platforms i.e. YouTube, Vimeo and Facebook. Each have their own strengths, none of which are prioritizing compensating creators for thoughtful and unique content. Facebook is good for engagement and views for exposure. Vimeo is a nice professional platform for hosting videos in high quality with good compression. YouTube is its own ballgame when it comes to monetizing, and anyone who’s watched a 20 minute click-bait titled vlog can tell you that monetization doesn’t necessarily mean high production values and thoughtful storytelling.</p>
+				<h5>Stock footage</h5>
+				<p>Stock footage companies still mostly sell photographs but who are also branching out into B-Roll. This was different from what SVD plans to do, but useful for understanding the options currently available for selling content. Stock footage ruled out any original storytelling content.</p>
+				<h5>Crowdsourced creative agencies</h5>
+				<p>This is the name we gave to a group of businesses that scope talent for larger brands, securing requirements then contracting work to vetted creators or through a bidding model. While these services have gained traction, they were still on the side of dictating requirements and contracting the work in a traditional manner. The bidding model also required a large amount of spec work on the part of the creator without a guarantee of compensation.</p>
+				<h5>&ldquo;Original Content&rdquo; buyers</h5>
+				<p>In the era of streaming and fragmented audience segments, more companies are purchasing or funding original content (Netflix, Hulu, Amazon, AOL, Comcast, etc.). These businesses were the closest model to what SVD is trying to do in that they pay well for already finished or pitched content. However, many of these companies are more like traditional models for distribution in that they require a certain level of networking ability and clout. Content that ends up being distributed through these channels is still produced by larger, better funded efforts and focused on longer form work. </p>
+				<h5>Ambulance chasers</h5>
+				<p>These were mostly services for handling the distribution rights for viral videos and catered to videos that were already trending and that weren’t necessarily high quality. The payments were mostly licensing rights to traditional media outlets. Included in this category were also distribution networks for already popular YouTube channels or creators who already had substantial audiences looking to grow to the next level. This helped us understand just how limited the options were for creators SVN was targeting as their primary users.</p>
 				</div>
-				<div>
-					<h3>Findings</h3>
 				</div>
-				<div>
-					<h4>Design Guidelines</h4>
+			</section>	
+			<section class="container">
+					<div class="section persist-area">
+					<div class="section-content">
+       			<div class="section-header-wrapper">
+    			<div class="section-header"><h3 class="u-open">Ideation</h3></div>
+    			</div>
+    			<h4>Finding the best solution</h4>
+				<p>After identifying our target users and defining the central problem we wanted to solve, we began developing concepts to test to find out what best met the needs of our target users. We had specific requirements we needed to meet for our solutions from a user-friendliness perspective first, while also while aligning with best practice and business requirements from the client.</p> 
+				<p>Given the short timeframe for the whole project, we wanted to maximize our user testing time. Each member of the three person team designed our own concepts that fell across three focus areas.</p>
+				<ul class="u-bullets">
+					<li>Capturing metadata information through a conversational, short-answer based approach that spoke to the user as a creator (mine)</li>
+					<li>A linear, step by step approach to video uploading that relied heavily on existing video platform interaction patterns</li>
+					<li>Focus on clear, up front communication and education on the process of submitting a video emphasizing transparency about SVD to inspire confidence in the user and pitch value for the content creator</li>
+				</ul>
+				<h4>Concept testing</h4>
+				<p>We tested these three prototypes in paper form both in person and with InVision prototypes for remote tests. We found the strengths and weaknesses of each concept and what best resonated with the users, who were all involved with video production. After presenting the results of our testing of the above three concepts to our client, we found componenents of each concept that were able to work well together in a final design.</p>
+				<h4>Workshopping with stakeholders</h4>
+				<p>Right as we finished validating our concepts and figuring out what worked and didn’t work from our various prototypes, we had a great opportunity. Although our client was based out of Hawaii and California, their head of product was able to come out to Chicago to workshop with us. Over three days we worked with the client to review and analyze the data from our testing. We then decided on a direction for our final design, made sure that things would work for the client with the solution and then built out the concept. By the time they flew out the morning of the third day, we had final screens for the concept that he could sign off on to take into usability testing that afternoon.</p>
+			</div>
+			</div>
+			</section>
+			<section class="container">
+					<div class="section persist-area">
+					<div class="section-content">
+       			<div class="section-header-wrapper">
+    			<div class="section-header"><h3 class="u-open">Insights</h3></div>
+    			</div>
+    			<h4>Bringing it all together</h4>
+				<h4>Creators as artists</h4>
+				<h5>Speaking the user's language</h5>
+				<p>The familiar language asking about who the users were as artists, their vision, what the pitch of their project was and more familiar language tested well. The users immediately understood what was being asked of them. We used the concurrent think-aloud protocol to capture data on how the users were processing the concepts and their responses were in line with the metadata that we needed to capture in order to meet technical requirements. The language also reminded some users of the questions asked of them when submitting to festivals so this lended more credibility and immediate buy-in, signalling seriousness with the users.</p>
+				<p>When using this language we also found that this familiar language put users in a mindset to share about their work.</p>
+				<div class="blockstyle">
+				<div class="hangingquote">&ldquo;</div>
+					<blockquote>It’s my work I don’t mind filling out this information</blockquote>
+				</div>
+				<p>Speaking to the user’s motivations as a creator, in language that resepected their self-understanding allowed my concept to capture even longer form short answer questions with enough information to meet the data capturing needs for cataloguing video submissions. Adding to this their career aspirations of being paid for their original work, we leveraged both their enthusiasm to create and share stories as well as the promise of SVD to offer fair compensation for this work, excite the user and avoid a potentially cumbersome tagging task for the user.</p>
+				<h4>Frictionless familiarity</h4>
+				<h5>Leveraging interaction and feedback patterns</h5>
+				{db prototype/show image from}
+				<p>Borrowing heavily from industry leaders for uploading videos online, we studied their interactions and translated them over to make SVD familiar. Even in paper prototype form, upload mechanisms for file requirements and upload times tested well. 
+				<p>My teammate also incorporated a LinkedIn style feedback mechanism for providing information to the user about their progress filling out the information needed for a video. This was in alignment with the Nielsen usability heuristic of “Visibility of system status.” We felt this was important because the video files being uploaded could take hours to upload. It was imperative that in all aspects of the process, the user knew where they were in the process. Because there was some necessary <i>seeming</i> redundancy and some users were impatient, we found that providing this information helped to ease the process of filling out all the required information.</p>
+				<h4>Reassuring Transparency</h4>
+				<h5>More information to inspire confidence</h5>
+				<p>explanation</p>
+				</div>
 				</div>
 			</section>
-			<section id="results" class="case-finale container u-60per">
-				<h2>What I made</h2>
-				<div>
-					<h3>Overview</h3>
+			<section class="container">
+				<div class="section persist-area">
+					<div class="section-content">
+       			<div class="section-header-wrapper">
+    			<div class="section-header"><h3 class="u-open">Outcome</h3></div>
+    			</div>
+    			<!-- content -->
+    			<p>asdfasdfasdfasdfsa</p>
 				</div>
-				<div>
-					<h4>Information Architecture</h4>
-				</div>
-				<div>
-					<h4>Concept Wireframes</h4>
-				</div>
-				<div>
-					<h4>My Concept</h4>
-				</div>
-				<div>
-					<h4>Final Solution</h4>
-				</div>
-			</section>
-			<section class="case-results container u-60per">
-				<h2>Results</h2>
-				<div>
-					<h3>Usability Testing</h3>
-				</div>
-				<div>
-					<h3>Development</h3>
 				</div>
 			</section>
 		</article>
 	</main>
-	<main>
+	<footer>
+		<div class="container">
+			<div class="u-indent">
+				<p class="u-white u-40pad-top"> &copy; Nate Chang 2016</p>
+			</div>
+		</div>
+	</footer>
