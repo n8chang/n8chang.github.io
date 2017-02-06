@@ -93,8 +93,6 @@ a:hover {
 	padding: 20px 45px;
 	border-radius: 3px;
 	border: solid 1.5px #ffffff;
-	margin-top: 30px;
-	margin-bottom: 30px;
 	-webkit-transition-duration: 0.4s;
 	-moz-transition-duration: 0.4s;
 	-o-transition-duration: 0.4s;
@@ -102,6 +100,25 @@ a:hover {
     transition-timing-function: ease-in;
 }
 .button:hover{
+	color: #fff;
+	background: rgba(25, 72, 114, 1.0);
+	border: solid 1.5px #fff;
+}
+.case-button {
+	display: inline-block;
+	width: 20vw;
+	font-size: 20px;
+	text-align: center;
+	padding: 20px 45px;
+	border-radius: 3px;
+	border: solid 1.5px #f4717e;
+	-webkit-transition-duration: 0.4s;
+	-moz-transition-duration: 0.4s;
+	-o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in;
+}
+.case-button:hover{
 	color: #fff;
 	background: rgba(25, 72, 114, 1.0);
 	border: solid 1.5px #fff;
@@ -119,7 +136,7 @@ a:hover {
 	display: block;
 }
 .u-center{
-	margin: auto;
+	margin: 0 auto;
 }
 .u-flexstart{
 	display: -webkit-box;
@@ -164,6 +181,10 @@ a:hover {
 }
 .u-40margin-top {
 	margin-top: 40px;
+}
+.u-3margin-tb {
+	margin-top: 3vh;
+	margin-bottom: 3vh;
 }
 .u-50per {
 	width: 50vw;
@@ -257,10 +278,25 @@ header {
 .hero{
 	height: 100vh;
 	width: 100vw;
-	min-height: 100vh;
 	position: relative;
 	background: #fab192;
 	background-attachment: fixed;
+	padding-bottom: 40px;
+}
+.herosvd{
+  	background-image:url(../img/svd/svd_back.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	height: 100vh;
+	padding-bottom: 40px;
+}
+.herotgn{
+  	background-image:url(../img/tgn/tgn_back.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	height: 100vh;
 	padding-bottom: 40px;
 }
 .herocontent {
@@ -268,6 +304,14 @@ header {
 	width: 100%;
 	top: 50%;
 	transform: translateY(-50%);
+}
+.case-herocontent {
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	padding-bottom: 5%;
+	transform: translateY(-50%);
+	background: rgba(30, 30, 30, .4);
 }
 .hero-logo {
 	width: 140px;
@@ -282,9 +326,6 @@ header {
 	-moz-transition-duration: 0.6s;
 	-o-transition-duration: 0.6s;
     transition-duration: 0.6s;
-}
-.logo:hover {
-	background: rgba(255, 255, 255, 0.3);
 }
 .herotext {
 	margin-top: 5vh;
@@ -319,7 +360,6 @@ header {
   	justify-content: flex-end;
 	margin-top: 12px;
 }
-
 .navlogo{
 	float: left;
 }
@@ -358,7 +398,6 @@ header {
 .navlink a:hover{
 	color: #fff;
 }
-
 .navlink a:hover::before, .navlink a:focus::before {
 	max-width: 100%;
 }
@@ -378,12 +417,14 @@ header {
 	position: relative;
 	margin-top: 40px;
 }
-.tooltip {
+.card .tooltip{
 	visibility: hidden;
+}
+.tooltip {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	background: #fff;
+	background: rgba(40, 40, 40, .3);
 	height: 480px;
 	width: 760px;
 }
@@ -393,28 +434,33 @@ header {
 	left: 50%;
 	transform: translate(-50%,-50%);
 }
-.tooltip: hover, .tooltip h3 {
+.card:hover .tooltip{
 	visibility: visible;
 }
 .card-img {
 	float: left;
+	height: 480px;
+	width: 760px;
 }
 .card-title {
 	position: absolute;
-	top: 30px;
+	top: 0px;
 	left: 0px;
 	padding: 40px 50px 30px;
 }
 .card-caption {
 	position: absolute;
-	bottom: 30px;
-	left: 35px;
-	padding: 40px;
-	/*border: solid 2px #fff;*/
-	background: rgba(255, 255, 255, 0.2);
-}
-figcaption {
+	bottom: 15px;
+	left: 15px;
+	padding: 20px;
+	background: rgba(74, 74, 74, 0.7);
 	max-width: 500px;
+}
+.card-caption h4 {
+	line-height: 1em;
+}
+.card a:hover{
+	color: #f4717e;
 }
 /* about */
 .aboutsection {
@@ -500,8 +546,15 @@ article figcaption{
 	font-size: 14px;
 	max-width: 50vw;
 }
-article img {
-	margin: 0 5vh;
+section h3 {
+	text-align: center;
+}
+.case-subhead{
+	margin: .3em auto .3em;
+	text-align: center;
+}
+.sticky-active h3{
+	text-align: left;
 }
 .blockstyle {
 	display: inline-block;
@@ -533,13 +586,22 @@ article blockquote {
 }
 .case-summary ul {
 	vertical-align: text-top;
-	margin: 5vh 0;
+	margin: 2vw 0;
 }
 .case-summary ul h4 {
-	margin-bottom: 1vh;
+	margin-bottom: 1vw;
 }
 .case-summary-summary {
 	width: 50vw;
+}
+.case-imgback {
+	width: 90%;
+	margin: 0 auto;
+	padding: 30px ;
+	background-color: #eee;
+}
+.case-others {
+	margin-bottom: 10vw;
 }
 /*footer*/
 footer {

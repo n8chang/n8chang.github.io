@@ -7,8 +7,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700|Roboto:400,400i,300,300i" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/simple-slideshow-styles.css">
 	<script src="https://code.jquery.com/jquery-latest.js"></script>
-		<script type="text/javascript">
+	<script type="text/javascript">
 		(function($) {
 		    $(document).ready(function(){
 		        $(window).scroll(function(){
@@ -77,11 +78,11 @@
 				<li class="navlink"><a href="index.html#work">work</a></li>
 			</ul>
 		</div>
-		<div class="hero u-center">
-			<div class="herocontent">
+		<div class="herosvd">
+			<div class="case-herocontent">
 				<div class="herotext">
-					<h1 class="u-inlineblock u-white">SVN Distribution</h1>
-						<h4 class="hero-subhead u-open">Designing a platform for video content creators to sell their complete, original content. No ads, no views, just up front payment for quality videos.</h4>
+					<h1 class="u-inlineblock u-white">SVD Distribution</h1>
+						<h4 class="hero-subhead u-open u-white">Designing a platform for video content creators to sell their complete, original content. No ads, no views, just up front payment for quality videos.</h4>
 				</div>
 			</div>
 				<img id="scrollarrow" class="u-block u-center " src="img/arrow.svg" alt="Scroll down for more">
@@ -142,9 +143,7 @@
 				</div>
 			</section>	
 			<section class="container">
-				<header class="section-header">
-					<h2>Respecting the artist</h2>
-				</header>
+					<h1 class="case-subhead">Respecting the artist</h1>
 				<div class="section persist-area">
 					<div class="section-content">
        				<div class="section-header-wrapper">
@@ -174,7 +173,8 @@
 						<div class="section-content">
 	       			<div class="section-header-wrapper">
 	    			<div class="section-header"><h3 class="u-open">Design Considerations</h3></div>
-	    			</div>					
+	    			</div>
+	    			<img src="img/svd/svd_affinity.jpg" alt="Affiinity mapping" title="Grouping data after user interviews" class="case-imgback">					
 					<h4>Who is a Content Creator?</h4>
 					<p>The client came to us with a strong idea of what needed to be captured and the market proposition of their product from the perspective of their buyers. Our task was to find out who the users were as suppliers. We interviewed users from across the spectrum of filmmakers. From freelance wedding photographers who to 30 year industry veterans who had shown their passion projects at Sundance. We wanted to know a few key things about them:</p>
 					<ul class="u-bullets">
@@ -198,11 +198,25 @@
 					<div class="section persist-area">
 						<div class="section-content">
 	       			<div class="section-header-wrapper">
-	    			<div class="section-header"><h3 class="u-open">Designing the Solution</h3></div>
+	    			<div class="section-header"><h3 class="u-open">Design Guidelines</h3></div>
 	    			</div>
-	    			<h4>Meet the users</h4>	
-					<img src="" alt="personas">
-					<p>In order to capture the main needs of users we identified from our research, we identified four main users that spanned a spectrum of career positions and aspirations.</p>
+	    			<h4>Meet the users</h4>
+	    			<p>In order to capture the main needs of users we identified from our research, we identified three main users that spanned a spectrum of career positions and aspirations.</p>
+					<div class="bss-slides">
+					 	<figure>
+					 		<img src="img/svd/svd_persona1.png" width="100%" />
+					 		<figcaption>Caption goes here</figcaption>
+					 	</figure>
+						<figure>
+					 		<img src="img/svd/svd_persona2.png" width="100%" />
+					 		<figcaption>Caption goes here</figcaption>
+					 	</figure>
+					 	<figure>
+					 		<img src="img/svd/svd_persona3.png" width="100%" />
+					 		<figcaption>Caption goes here</figcaption>
+					 	</figure>
+					</div> 
+					
 					<h4>Problem Statement</h4>
 					<p>With these personas established, we came to the central problem we were trying to solve, framing a user-centered design problem that spoke to our client’s business goals.</p>
 					<div class="u-callout">
@@ -242,7 +256,9 @@
 				<p>At the same time, the experience for the user needed to be novel but not confusing and relying on familiar patterns for video uploading online was the quickest way to do that.</p>
 				<h4>Competitive Analysis</h4>
 				<h5>Understanding the landscape</h5>
-				<p>The scope of our competitive landscape research covered the following ccompetitive segments and these are the main takeaways that informed our design process.</p>
+				<p>The scope of our competitive landscape research covered the following ccompetitive segments. We broke them down across 2 axes, monetization/views and freeform/storytelling. This captured the range of video distributin from viral and stock footage video to traditional outlets like the Hollywoood studio system and film festivals. The main takeaway from all of this was that the most promising segment was the one in which SVD wants to compete, but that they offered a unique take on monetization that was not dependent on views <i>or</i> the established channels.</p>
+				<p>It was crucial to lay this out early to the client, not only to let them know how we understood the market, but also </p>
+				<img src="img/svd/svd_comp.png" alt="SVD Competitive Analysis" Title="Competitive Analysis for SVD" class="case-imgback">
 				<h5>The Egalitarian Giants</h5>
 				<p>Current video distribution platforms i.e. YouTube, Vimeo and Facebook. Each have their own strengths, none of which are prioritizing compensating creators for thoughtful and unique content. Facebook is good for engagement and views for exposure. Vimeo is a nice professional platform for hosting videos in high quality with good compression. YouTube is its own ballgame when it comes to monetizing, and anyone who’s watched a 20 minute click-bait titled vlog can tell you that monetization doesn’t necessarily mean high production values and thoughtful storytelling.</p>
 				<h5>Stock footage</h5>
@@ -316,6 +332,12 @@
 				</div>
 			</section>
 		</article>
+		<div class="container u-50per">
+			<div class="case-others">
+				<h5>Read about more of my work</h5>
+				<a href="tgn.html" title="TGN Case Study">The Graide Network case study</a>
+			</div>
+		</div>
 	</main>
 	<footer>
 		<div class="container">
@@ -324,3 +346,12 @@
 			</div>
 		</div>
 	</footer>
+	</p>
+	</div>
+	<!-- slideshow js -->
+		
+	<script type="text/javascript" src="js/better-simple-slideshow.js"></script>
+	<script>
+	        makeBSS('.bss-slides');
+    </script>
+</body>
