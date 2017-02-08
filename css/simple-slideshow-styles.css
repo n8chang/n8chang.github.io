@@ -15,8 +15,8 @@
 }
 .bss-slides figure img{
   opacity: 0;
-  -webkit-transition: opacity 1.2s;
-  transition: opacity 1.2s;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
@@ -39,11 +39,11 @@
   padding: .25em;
   color: #fff;
   background: #000;
-  background: rgba(0,0,0, .25);
+  background: rgba(0,0,0, .5);
   border-radius: 2px;
   opacity: 0;
-  -webkit-transition: opacity 1.2s;
-  transition: opacity 1.2s;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
 }
 .bss-slides .bss-show figcaption{
   z-index: 3;
@@ -56,7 +56,7 @@
   color: #fff;
   position: absolute;
   background: #000;
-  background: rgba(0,0,0, .6);
+  background: rgba(0,0,0, .3);
   top: 50%;
   z-index: 4;
   font-size: 2em;
@@ -73,15 +73,15 @@
 }
 .bss-next{
   right: -1px;
-  padding: 10px 5px 15px 10px;
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
-}
+  padding: 5px 3px 10px 5px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+} 
 .bss-prev{
   left: 0;
-  padding: 10px 10px 15px 5px;
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
+  padding: 5px 5px 10px 3px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 .bss-fullscreen{
   display: block;

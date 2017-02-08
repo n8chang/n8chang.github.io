@@ -272,7 +272,7 @@ a:hover {
 header {
 	text-align: center;
 	margin: 0 auto;
-	min-height: 730px;/* change for mobile*/
+	min-height: 100vh;/* change for mobile*/
 	/*background: #fab192;*/
 }
 .hero{
@@ -284,20 +284,18 @@ header {
 	padding-bottom: 40px;
 }
 .herosvd{
-  	background-image:url(../img/svd/svd_back.jpg);
+  	background-image:url(../img/svd/svd_hero.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
 	height: 100vh;
-	padding-bottom: 40px;
 }
 .herotgn{
-  	background-image:url(../img/tgn/tgn_back.jpg);
+  	background-image:url(../img/tgn/tgn_hero.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
 	height: 100vh;
-	padding-bottom: 40px;
 }
 .herocontent {
 	position: absolute;
@@ -597,7 +595,21 @@ article blockquote {
 .case-imgback {
 	width: 90%;
 	margin: 0 auto;
-	padding: 30px ;
+	padding: 20px ;
+	background-color: #eee;
+}
+.case-imgleft{
+	width: 25%;
+	float: left;
+	margin: 5px 20px 5px 0;
+	padding: 20px;
+	background-color: #eee;
+}
+.case-imgright{
+	width: 25%;
+	float: right;
+	margin: 5px 0 5px 20px;
+	padding: 20px;
 	background-color: #eee;
 }
 .case-others {
