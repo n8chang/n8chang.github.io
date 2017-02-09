@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Local Guide Case Study - Nate Chang</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700|Roboto:400,400i,300,300i" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/simple-slideshow-styles.css">
+	<script src="https://code.jquery.com/jquery-latest.js"></script>
+		<script type="text/javascript">
+		// nav fade in
+		(function($) {
+		    $(document).ready(function(){
+		        $(window).scroll(function(){
+		            if ($(this).scrollTop() > 175) {
+		                $('#nav').fadeIn(500);
+		            } else {
+		                $('#nav').fadeOut(500);
+		            }
+		        });
+		    });
+		})(jQuery);
+		</script>
+		<script type="text/javascript">
+	// section header Scroll script
+			$(document).ready( function() {
+
+		    function updateTableHeaders() {
+		       $(".persist-area").each(function() {
+		       
+		           var el             = $(this),
+		               offset         = el.offset(),
+		               scrollTop      = $(window).scrollTop(),
+		               sectionHeader = $(".section-header", this),
+		               sectionHeaderWrapper = $(".section-header-wrapper", this),
+		               sectionHeaderWrapperOffset = sectionHeaderWrapper.offset(),
+		               sectionContent = $(".section-content", this),
+		               sectionContentOffset = sectionContent.offset();
+		           
+		           if ((scrollTop > sectionHeaderWrapperOffset.top))
+		           {
+		                sectionHeader.addClass("sticky");
+
+		                if ((scrollTop < sectionContentOffset.top + sectionContent.outerHeight() - sectionHeader.height()))
+		                {
+		                    sectionHeader.removeClass("sticky-parked");
+		                    sectionHeader.addClass("sticky-active");
+		                } else
+		                {
+		                    sectionHeader.removeClass("sticky-active");
+		                    sectionHeader.addClass("sticky-parked");
+		                }
+		           } else
+		           {
+		                sectionHeader.removeClass("sticky-active");
+		                sectionHeader.removeClass("sticky");
+		           }
+
+		       });
+		    }
+
+		    updateTableHeaders();
+		    $(window).scroll(updateTableHeaders);
+			});
+		</script>
+</head>
+<body>
+	<header>
+		<div id="nav" class="u-hidden">
+		<div class="navlogoback">
+			<div class="navlogo">
+				<a href="index.html"><img src="img/n_logov3.svg" class="logo" alt="Nate Chang UX designer N logo"></a>
+			</div>
+		</div>
+			<ul class="nav_menu">
+				<li class="navlink"><a href="index.html#about">about</a></li>
+				<li class="navlink"><a href="index.html#work">work</a></li>
+			</ul>
+		</div>
+		<div class="herolg">
+			<div class="case-herocontent">
+				<div class="herotext">
+					<h1 class="u-inlineblock u-white">Local Guide</h1>
+						<h4 class="hero-subhead u-open u-white">Equipping users with the tailored knowledg they need to feel at home in any city.</h4>
+				</div>
+			</div>
+				<img id="scrollarrow" class="u-block u-center " src="img/arrow.svg" alt="Scroll down for more">
+			</div>
+		</div>
+	</header>
+	<!-- Case study begin -->
+	<main>
+		<article class="case-article">
+			<section class="case-summary">
+				<div class="container u-50per">
+					<h2 class="u-open">About</h2>
+					<ul class="case-summary-summary u-block">
+						<li>
+							<h4>Summary</h4>
+						</li>
+				 		<li>
+				 			<p>Local Guide was a solo UX/UI mobile app project I worked on executing UX strategy and design as well as branding and marketing. I completed my work on it at the beginning of my time at DESIGNATION.</p>
+				 		</li>
+					</ul>
+					<div class="u-flexstart">
+						 <div class="resume-column">
+		 					<ul>
+							 	<li><h4>Role</h4></li>
+							 	<li class="case-summary-item">UX/UI Designer</li>
+							</ul>
+						</div>
+						<div class="resume-column">
+						 	<ul>
+								<li>
+									<h4>Deliverables</h4>
+								</li>
+								<li>Competitive analysis</li>
+								<li>User personas</li>
+								<li>Paper prototype</li>
+								<li>Mid-fidelity wireframe</li>
+								<li>Mid-fidelity Axure prototype</li>
+								<li>Style tiles</li>
+								<li>Logo design</li>
+								<li>High-fidelity app design</li>
+								<li>High-fidelity prototype</li>
+								<li>Responsive marketing website</li>
+							</ul>
+						</div>
+					</div><!--end flex list  -->
+				</div>
+			</section>	
+			<section class="container">
+					<h1 class="case-subhead">Feeling like a locol</h1>
+				<div class="section persist-area">
+					<div class="section-content">
+       				<div class="section-header-wrapper">
+    				<div class="section-header"><h3 class="u-open">Define</h3></div>
+    			</div>
+				<section>
+				<h4>Project Brief</h4>
+					<p>For Local Guide, I was given the prompt to design a mobile app for providing travelers information about where they were visiting. I worked from user interview transcripts about people's travelling experiences and stories to define a problem to solve and create personas to guide my empathetic design.</p>
+				</section>
+			</div>
+			</div>
+			</section>	
+			<section class="container">
+			<div class="section persist-area">
+					<div class="section-content">
+       				<div class="section-header-wrapper">
+    				<div class="section-header"><h3 class="u-open">Empathize</h3></div>
+    			</div>
+    			<section>
+					<h4>Personas</h4>
+					<p>I identified two primary personas who I felt captured the range of travelers sufficiently to encompass the broad range of users that my app would attract. My focus was on urban travel for users who wanted to be informed and off the beaten path, but who also needed the convenience and an app that could meet both personal and business needs. The personas had to be specific but not too specific and varied enough to balance each other out and cover the full range of travel that I had identified from the research.</p>
+					<div class="bss-slides">
+						<figure>
+							<img src="img/lg/lg_persona1.jpg" width="100%" alt="Primary persona">
+							<figcaption>Primary persona</figcaption>
+						</figure>
+						<figure>
+							<img src="img/lg/lg_persona2.jpg" width="100%" alt="Secondary persona">
+							<figcaption>Secondary persona</figcaption>
+						</figure>
+					</div>
+				</section>
+				<section>
+					<h4>The solution</h4>
+					<p>Taking into consideration the competitive landscape, I decided on a product built around curated lists that were tailored to a user's stated interests. I couldn't compete on reviews like Yelp, Foursquare or Google. I didn't want to create an experience that was like a traditional travel guide in digital form such as Lonely Planet, but the idea of having location specific guides that were evolving but not entirely driven by an algorithm seemed like a good balance. The brand would be built upon the idea of curated and personalized travel with the extra confidence that users desired from something like a travel guide or even from asking the concierge or other locals when arriving.</p>
+					<h4>The right balance of personalization</h4>
+					<p>I considered many options for the core feature-set for the app and what it's competitive strengths would be. Map-based searching by location was covered by established apps that rely either on ratings or proximity. I wanted to feature destinations that would be worth grabbing a taxi, bus, train or walking to. A user could rely on the other apps they already use if they needed a bite to eat around the corner or to check the ratings on a place in front of them.</p>
+					<p>Because the app would be custom and specific to a destination, my requirements were a guide to the city, thematically curated lists that would be generic to the brand, personally generated lists and search. In addition there would need to be a way to add destinations and events to an itinerary but I wanted to make it as flexible as possible. Integrating functionality with a user's preferred apps was a priority for me. This would also reduce the development costs of even integrating a map functionality, directions, or itinerary booking. Instead the features from within the app were focused on discovery and then using whatever means a user would want to navigate or even schedule a time to go.</p>
+					<p>With these requirements established, I began brainstorming and sketching concepts, eventually making a paper prototype and then a mid-fidelity wireframe in Axure.</p>
+				</section>
+			</div>
+			</div>
+			</section>
+			<section class="container">
+			<div class="section persist-area">
+					<div class="section-content">
+       				<div class="section-header-wrapper">
+    				<div class="section-header"><h3 class="u-open">Branding</h3></div>
+    			</div>
+    			<section>
+    			<h4>Bringing Local Guide to life</h4>
+    			<p>With the established idea of the brand as smart, knowledgable yet unexpected, I started with logo concepts. From sketches I went to higher fidelity designs and eventually settled on the top left.</p>
+    			<img src="img/lg/lg_logoexplore.png" alt="" class="case-imgback">
+    			<h4>High fidelity designs</h4>
+    			<p>This is what the final app screens looked like.</p>
+    			<div class="bss-slides">
+					<figure>
+						<img src="img/lg/lg_appscreens.png" width="100%" alt="">
+						<figcaption>All the main screens</figcaption>
+					</figure>
+					<figure>
+						<img src="img/lg/lg_onboard.png" width="100%" alt="">
+						<figcaption>Onboarding flow</figcaption>
+					</figure>
+					<figure>
+						<img src="img/lg/lg_mainflow.png" width="100%" alt="">
+						<figcaption>Main flow</figcaption>
+					</figure>
+				</div>
+    			<h4>Marketing Website</h4>
+    			<p>I also designed a responsive marketing website.</p>
+				<img src="img/lg/lg_websites.png" alt="" class="case-imgback">
+    			</section>
+			</div>
+			</div>
+			</section>
+	</main>
+	<footer>
+		<div class="container">
+			<div class="u-indent">
+				<p class="u-white u-40pad-top"> &copy; Nate Chang 2016</p>
+			</div>
+		</div>
+	<!-- slideshow js -->
+	<script type="text/javascript" src="js/better-simple-slideshow.js"></script>
+	<script>
+	        makeBSS('.bss-slides');
+    </script>
+</body>

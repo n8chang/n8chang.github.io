@@ -9,7 +9,8 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/simple-slideshow-styles.css">
 	<script src="https://code.jquery.com/jquery-latest.js"></script>
-	<script type="text/javascript">
+		<script type="text/javascript">
+		// nav fade in
 		(function($) {
 		    $(document).ready(function(){
 		        $(window).scroll(function(){
@@ -23,46 +24,46 @@
 		})(jQuery);
 		</script>
 		<script type="text/javascript">
-	// Header Scroll script
+	// section header Scroll script
 			$(document).ready( function() {
 
-    function updateTableHeaders() {
-       $(".persist-area").each(function() {
-       
-           var el             = $(this),
-               offset         = el.offset(),
-               scrollTop      = $(window).scrollTop(),
-               sectionHeader = $(".section-header", this),
-               sectionHeaderWrapper = $(".section-header-wrapper", this),
-               sectionHeaderWrapperOffset = sectionHeaderWrapper.offset(),
-               sectionContent = $(".section-content", this),
-               sectionContentOffset = sectionContent.offset();
-           
-           if ((scrollTop > sectionHeaderWrapperOffset.top))
-           {
-                sectionHeader.addClass("sticky");
+		    function updateTableHeaders() {
+		       $(".persist-area").each(function() {
+		       
+		           var el             = $(this),
+		               offset         = el.offset(),
+		               scrollTop      = $(window).scrollTop(),
+		               sectionHeader = $(".section-header", this),
+		               sectionHeaderWrapper = $(".section-header-wrapper", this),
+		               sectionHeaderWrapperOffset = sectionHeaderWrapper.offset(),
+		               sectionContent = $(".section-content", this),
+		               sectionContentOffset = sectionContent.offset();
+		           
+		           if ((scrollTop > sectionHeaderWrapperOffset.top))
+		           {
+		                sectionHeader.addClass("sticky");
 
-                if ((scrollTop < sectionContentOffset.top + sectionContent.outerHeight() - sectionHeader.height()))
-                {
-                    sectionHeader.removeClass("sticky-parked");
-                    sectionHeader.addClass("sticky-active");
-                } else
-                {
-                    sectionHeader.removeClass("sticky-active");
-                    sectionHeader.addClass("sticky-parked");
-                }
-           } else
-           {
-                sectionHeader.removeClass("sticky-active");
-                sectionHeader.removeClass("sticky");
-           }
+		                if ((scrollTop < sectionContentOffset.top + sectionContent.outerHeight() - sectionHeader.height()))
+		                {
+		                    sectionHeader.removeClass("sticky-parked");
+		                    sectionHeader.addClass("sticky-active");
+		                } else
+		                {
+		                    sectionHeader.removeClass("sticky-active");
+		                    sectionHeader.addClass("sticky-parked");
+		                }
+		           } else
+		           {
+		                sectionHeader.removeClass("sticky-active");
+		                sectionHeader.removeClass("sticky");
+		           }
 
-       });
-    }
+		       });
+		    }
 
-    updateTableHeaders();
-    $(window).scroll(updateTableHeaders);
-});
+		    updateTableHeaders();
+		    $(window).scroll(updateTableHeaders);
+			});
 		</script>
 </head>
 <body>
@@ -176,7 +177,7 @@
 	    			</div>
 	    			<img src="img/svd/svd_affinity.jpg" alt="Affiinity mapping" title="Grouping data after user interviews" class="case-imgback">					
 					<h4>Who is a Content Creator?</h4>
-					<p>The client came to us with a strong idea of what needed to be captured and the market proposition of their product from the perspective of their buyers. Our task was to find out who the users were as suppliers. We interviewed users from across the spectrum of filmmakers. From freelance wedding photographers who to 30 year industry veterans who had shown their passion projects at Sundance. We wanted to know a few key things about them:</p>
+					<p>The client came to us with a strong idea of what needed to be captured and the market proposition of their product from the perspective of their buyers. Our task was to find out who the users were as suppliers. We interviewed users from across the spectrum of filmmakers. They ranged from freelance wedding photographers to 30 year industry veterans who had shown their passion projects at Sundance. We wanted to know a few key things about them:</p>
 					<ul class="u-bullets">
 						<li>How they got started in filmmaking</li>
 						<li>What they were most passionate about</li>

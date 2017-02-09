@@ -195,9 +195,6 @@ a:hover {
 .u-80per {
 	width: 80vw;
 }
-.u-300{
-	font-weight: 300;
-}
 .u-bullets {
 	list-style-type: circle;
 	margin-left: 3vw;
@@ -292,6 +289,13 @@ header {
 }
 .herotgn{
   	background-image:url(../img/tgn/tgn_hero.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	height: 100vh;
+}
+.herolg{
+  	background-image:url(../img/lg/lg_hero.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;

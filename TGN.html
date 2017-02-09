@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script src="https://code.jquery.com/jquery-latest.js"></script>
 		<script type="text/javascript">
+		// nav fade in
 		(function($) {
 		    $(document).ready(function(){
 		        $(window).scroll(function(){
@@ -23,46 +24,46 @@
 		})(jQuery);
 		</script>
 		<script type="text/javascript">
-	// Header Scroll script
+	// section header Scroll script
 			$(document).ready( function() {
 
-    function updateTableHeaders() {
-       $(".persist-area").each(function() {
-       
-           var el             = $(this),
-               offset         = el.offset(),
-               scrollTop      = $(window).scrollTop(),
-               sectionHeader = $(".section-header", this),
-               sectionHeaderWrapper = $(".section-header-wrapper", this),
-               sectionHeaderWrapperOffset = sectionHeaderWrapper.offset(),
-               sectionContent = $(".section-content", this),
-               sectionContentOffset = sectionContent.offset();
-           
-           if ((scrollTop > sectionHeaderWrapperOffset.top))
-           {
-                sectionHeader.addClass("sticky");
+		    function updateTableHeaders() {
+		       $(".persist-area").each(function() {
+		       
+		           var el             = $(this),
+		               offset         = el.offset(),
+		               scrollTop      = $(window).scrollTop(),
+		               sectionHeader = $(".section-header", this),
+		               sectionHeaderWrapper = $(".section-header-wrapper", this),
+		               sectionHeaderWrapperOffset = sectionHeaderWrapper.offset(),
+		               sectionContent = $(".section-content", this),
+		               sectionContentOffset = sectionContent.offset();
+		           
+		           if ((scrollTop > sectionHeaderWrapperOffset.top))
+		           {
+		                sectionHeader.addClass("sticky");
 
-                if ((scrollTop < sectionContentOffset.top + sectionContent.outerHeight() - sectionHeader.height()))
-                {
-                    sectionHeader.removeClass("sticky-parked");
-                    sectionHeader.addClass("sticky-active");
-                } else
-                {
-                    sectionHeader.removeClass("sticky-active");
-                    sectionHeader.addClass("sticky-parked");
-                }
-           } else
-           {
-                sectionHeader.removeClass("sticky-active");
-                sectionHeader.removeClass("sticky");
-           }
+		                if ((scrollTop < sectionContentOffset.top + sectionContent.outerHeight() - sectionHeader.height()))
+		                {
+		                    sectionHeader.removeClass("sticky-parked");
+		                    sectionHeader.addClass("sticky-active");
+		                } else
+		                {
+		                    sectionHeader.removeClass("sticky-active");
+		                    sectionHeader.addClass("sticky-parked");
+		                }
+		           } else
+		           {
+		                sectionHeader.removeClass("sticky-active");
+		                sectionHeader.removeClass("sticky");
+		           }
 
-       });
-    }
+		       });
+		    }
 
-    updateTableHeaders();
-    $(window).scroll(updateTableHeaders);
-});
+		    updateTableHeaders();
+		    $(window).scroll(updateTableHeaders);
+			});
 		</script>
 </head>
 <body>
