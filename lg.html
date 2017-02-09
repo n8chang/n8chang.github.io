@@ -188,7 +188,7 @@
     			<img src="img/lg/lg_logoexplore.png" alt="" class="case-imgback">
     			<h4>High fidelity designs</h4>
     			<p>This is what the final app screens looked like.</p>
-    			<div class="bss-slides">
+    			<div class="bss-slides slidefull">
 					<figure>
 						<img src="img/lg/lg_appscreens.png" width="100%" alt="">
 						<figcaption>All the main screens</figcaption>
@@ -219,6 +219,13 @@
 	<!-- slideshow js -->
 	<script type="text/javascript" src="js/better-simple-slideshow.js"></script>
 	<script>
-	        makeBSS('.bss-slides');
+			var opts = {
+		    auto : false,
+		    fullScreen : true,
+		    swipe : false
+		};
+		makeBSS('.bss-slides', opts);
+	        // makeBSS('.bss-slides');       
     </script>
+
 </body>
