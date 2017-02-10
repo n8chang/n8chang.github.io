@@ -1,348 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>The Graide Network Case Study - Nate Chang</title>
-	<link rel="stylesheet" href="css/reset.css">
-	<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700|Roboto:400,400i,300,300i" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/simple-slideshow-styles.css">
-	<link rel="stylesheet" href="css/style.css">
-	<script src="https://code.jquery.com/jquery-latest.js"></script>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>The Graide Network Case Study - Nate Chang</title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link href="https://fonts.googleapis.com/css?family=Neuton:300,400,400i,700|Open+Sans:400,400i,300,300i" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/simple-slideshow-styles.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="https://code.jquery.com/jquery-latest.js"></script>
 		<script type="text/javascript">
 		// nav fade in
 		(function($) {
-		    $(document).ready(function(){
-		        $(window).scroll(function(){
-		            if ($(this).scrollTop() > 175) {
-		                $('#nav').fadeIn(500);
-		            } else {
-		                $('#nav').fadeOut(500);
-		            }
-		        });
-		    });
+		$(document).ready(function(){
+		$(window).scroll(function(){
+		if ($(this).scrollTop() > 175) {
+		$('#nav').fadeIn(500);
+		} else {
+		$('#nav').fadeOut(500);
+		}
+		});
+		});
 		})(jQuery);
 		</script>
 		<script type="text/javascript">
-	// section header Scroll script
+		// section header Scroll script
 			$(document).ready( function() {
-
-		    function updateTableHeaders() {
-		       $(".persist-area").each(function() {
-		       
-		           var el             = $(this),
-		               offset         = el.offset(),
-		               scrollTop      = $(window).scrollTop(),
-		               sectionHeader = $(".section-header", this),
-		               sectionHeaderWrapper = $(".section-header-wrapper", this),
-		               sectionHeaderWrapperOffset = sectionHeaderWrapper.offset(),
-		               sectionContent = $(".section-content", this),
-		               sectionContentOffset = sectionContent.offset();
-		           
-		           if ((scrollTop > sectionHeaderWrapperOffset.top))
-		           {
-		                sectionHeader.addClass("sticky");
-
-		                if ((scrollTop < sectionContentOffset.top + sectionContent.outerHeight() - sectionHeader.height()))
-		                {
-		                    sectionHeader.removeClass("sticky-parked");
-		                    sectionHeader.addClass("sticky-active");
-		                } else
-		                {
-		                    sectionHeader.removeClass("sticky-active");
-		                    sectionHeader.addClass("sticky-parked");
-		                }
-		           } else
-		           {
-		                sectionHeader.removeClass("sticky-active");
-		                sectionHeader.removeClass("sticky");
-		           }
-
-		       });
-		    }
-
-		    updateTableHeaders();
-		    $(window).scroll(updateTableHeaders);
+		function updateTableHeaders() {
+		$(".persist-area").each(function() {
+		
+		var el             = $(this),
+		offset         = el.offset(),
+		scrollTop      = $(window).scrollTop(),
+		sectionHeader = $(".section-header", this),
+		sectionHeaderWrapper = $(".section-header-wrapper", this),
+		sectionHeaderWrapperOffset = sectionHeaderWrapper.offset(),
+		sectionContent = $(".section-content", this),
+		sectionContentOffset = sectionContent.offset();
+		
+		if ((scrollTop > sectionHeaderWrapperOffset.top))
+		{
+		sectionHeader.addClass("sticky");
+		if ((scrollTop < sectionContentOffset.top + sectionContent.outerHeight() - sectionHeader.height()))
+		{
+		sectionHeader.removeClass("sticky-parked");
+		sectionHeader.addClass("sticky-active");
+		} else
+		{
+		sectionHeader.removeClass("sticky-active");
+		sectionHeader.addClass("sticky-parked");
+		}
+		} else
+		{
+		sectionHeader.removeClass("sticky-active");
+		sectionHeader.removeClass("sticky");
+		}
+		});
+		}
+		updateTableHeaders();
+		$(window).scroll(updateTableHeaders);
 			});
 		</script>
-</head>
-<body>
-	<header>
-		<div id="nav" class="u-hidden">
-		<div class="navlogoback">
-			<div class="navlogo">
-				<a href="index.html"><img src="img/n_logov3.svg" class="logo" alt="Nate Chang UX designer N logo"></a>
-			</div>
-		</div>
-			<ul class="nav_menu">
-				<li class="navlink"><a href="index.html#about">about</a></li>
-				<li class="navlink"><a href="index.html#work">work</a></li>
-			</ul>
-		</div>
-		<div class="herotgn">
-			<div class="case-herocontent">
-				<div class="herotext">
-					<h1 class="u-inlineblock u-white">The Graide Network</h1>
-						<h4 class="hero-subhead u-open u-white">Creating a platform to give aspiring teachers experience grading real student assignments</h4>
+	</head>
+	<body>
+		<header>
+			<div id="nav" class="u-hidden">
+				<div class="navlogoback">
+					<div class="navlogo">
+						<a href="index.html"><img src="img/n_logov3.svg" class="logo" alt="Nate Chang UX designer N logo"></a>
+					</div>
 				</div>
+				<ul class="nav_menu">
+					<li class="navlink"><a href="index.html#about">about</a></li>
+					<li class="navlink"><a href="index.html#work">work</a></li>
+				</ul>
 			</div>
+			<div class="case-hero herotgn">
+				<div class="case-herocontent">
+					<div class="herotext">
+						<h1 class="u-inlineblock u-white">The Graide Network</h1>
+						<h4 class="hero-subhead u-open u-white">Creating a platform to give aspiring teachers experience grading real student assignments</h4>
+					</div>
+				</div>
 				<img id="scrollarrow" class="u-block u-center " src="img/arrow.svg" alt="Scroll down for more">
 			</div>
 		</div>
 	</header>
 	<!-- Case study begin -->
 	<main>
-		<article class="case-article">
-			<section class="case-summary">
-				<div class="container u-50per">
-					<h2 class="u-open">About</h2>
-					<ul class="case-summary-summary u-block">
-						<li>
-							<h4>Summary</h4>
-						</li>
-				 		<li>
-				 			<p>My team and I created a flexible digital grading platform for a startup that connects secondary school teachers with undergraduate education majors who want real-world experience grading student work.</p>
-				 		</li>
-					</ul>
-					<div class="u-flexstart">
-						 <div class="resume-column">
-							<ul>
-		 						<li><h4>Client</h4></li>
-		 						<li class="case-summary-item">The Graide Network</li>
-		 					</ul>
-		 					<ul>
-							 	<li><h4>Role</h4></li>
-							 	<li class="case-summary-item">UX Designer</li>
-							</ul>
-						 	<ul>
-							 	<li>
-									<h4>Team</h4>
-							 	</li>
-								<li class="case-summary-item">Stevie De LaCruz</li>
-								<li class="case-summary-item">Jason Park</li>
-						 	</ul>
-						</div>
-						<div class="resume-column">
-						 	<ul>
-								<li>
-									<h4>Deliverables</h4>
-								</li>
-								<li>User interviews</li>
-								<li>User and domain research</li>
-								<li>Wireframing</li>
-								<li class="case-summary-item">Rapid Axure prototyping</li>
-								<li class="case-summary-item">Information architecture</li>
-								<li class="case-summary-item">Usability testing</li>
-								<li class="case-summary-item">Interaction design</li>
-								<li class="case-summary-item">User flows</li>
-								<li class="case-summary-item">User stories</li>
-							</ul>
-						</div>
+	<article class="case-article">
+		<section class="case-summary">
+			<div class="container">
+				<h2 class="u-open">About</h2>
+				<ul class="case-summary-summary u-block">
+					<li>
+						<h4>Summary</h4>
+					</li>
+					<li>
+						<p>My team and I created a flexible digital grading platform for a startup that connects secondary school teachers with undergraduate education majors who want real-world experience grading student work.</p>
+					</li>
+				</ul>
+				<div class="u-flexstart">
+					<div class="resume-column">
+						<ul>
+							<li><h4>Client</h4></li>
+							<li>The Graide Network</li>
+						</ul>
+						<ul>
+							<li><h4>Role</h4></li>
+							<li>UX Design</li>
+							<li>IxD Design</li>
+						</ul>
+						<ul>
+							<li>
+								<h4>Team</h4>
+							</li>
+							<li>Stevie De LaCruz</li>
+							<li>Jason Park</li>
+						</ul>
+					</div>
+					<div class="resume-column">
+						<ul>
+							<li>
+								<h4>Deliverables</h4>
+							</li>
+							<li>User interviews</li>
+							<li>SME interviews</li>
+							<li>User and domain research</li>
+							<li>Wireframing</li>
+							<li>Paper low-fidelity prototypes</li>
+							<li>InVision mid-fidelity prototype</li>
+							<li>Axure mid-fidelity prototype</li>
+							<li>Usability heuristic analysis</li>
+							<li>Information architecture</li>
+							<li">Usability testing</li>
+							<li>Interaction design</li>
+							<li>User flows</li>
+							<li>User stories</li>
+						</ul>
+					</div>
 					</div><!--end flex list  -->
 				</div>
-			</section>	
+			</section>
 			<section class="container">
-					<h2 class="case-subhead">Teaching by Doing</h2>
+				<h1 class="case-subhead">Teaching by Doing</h1>
 				<div class="section persist-area">
 					<div class="section-content">
-       			<div class="section-header-wrapper">
-    			<div class="section-header"><h3 class="u-open">Project Brief</h3></div>
-    			</div>
-				<section>
-					<h4>Who</h4>
-					<p><a href=”http://www.thegraidenetwork.com/”>The Graide Network</a> is a platform that connects teachers who could benefit from extra grading bandwidth with undergraduate education majors looking for field experience grading and mentorship from experienced teachers. The Graide Network had just finished a successful first academic year pilot with a very minimal product that required the graders to manually download a .ZIP file and fill in an Excel spreadsheet. This was not a sustainable or scalable solution so my team was brought on to design a new platform that allowed graders to find available grading opportunities, apply and then grade assignments. My team’s task was to create the grading platform and the dashboard through which graders would find, select and apply for assignments to grade.</p> 
-					<p>I led my team in designing a grader experience that was flexible for the full spectrum of users and easy for The Graide Network’s developers to immediately implement for the upcoming school year. Our solution was designed to fit into the busy schedules of college students, while also guiding them through a process of grading assignments that was informed by research into how experienced teachers grade.</p>
-				</section>
-				<section>
-					<h4>What</h4>
-					<p>In all the talk of the importance of education and of good teachers, we often think that the bulk of work as a teacher is in time spent with students, educating and building relationships. In reality, teaching is only half. The harder, less romantic work is in assessing students to gauge learning. Grading is essential for measuring student progress and a large part of the work a teacher does, but it usually occurs after hours, on weekends and between class periods—assuming there aren’t other work and life obligations.</p>
-					<p>Even for aspiring teachers majoring in education in college, grading doesn’t play as crucial of a role in teacher training. Students log field hours in the classroom shadowing teachers, but they don’t follow them home to watch them grade. When interviewing teachers, my team found that grading was one of the most time consuming and stressful parts of the job.</p>
-				</section>
-				<section>
-					<h4>Constraints</h4>
-					<ol class="u-ordernumber">
-						<li>2.5 weeks</li>
-						<li>Our client finalized their in-house dev team during the project so we met with them to align our deliverables with their priorities.</li>
-						<li>The next school year was roughly a month away and the client wanted to build out our changes as soon as possible. We adopted our design strategy to accommodate an Agile workflow and deliver a usability tested MVP design with a roadmap for future product improvements that we had also tested.</li>
-					</ol>
-				</section>
-			</div>
-			</div>
+						<div class="section-header-wrapper">
+							<div class="section-header"><h3 class="u-open u-marginAn">Project Brief</h3></div>
+						</div>
+						<section>
+							<h4>Who</h4>
+							<p><a href=”http://www.thegraidenetwork.com/”>The Graide Network</a> is a platform that connects teachers who could benefit from extra grading bandwidth with undergraduate education majors looking for field experience grading and mentorship from experienced teachers. The Graide Network had just finished a successful first academic year pilot with a very minimal product that required the graders to manually download a .ZIP file and fill in an Excel spreadsheet. This was not a sustainable or scalable solution so my team was brought on to design a new platform that allowed graders to find available grading opportunities, apply and then grade assignments. My team’s task was to create the grading platform and the dashboard through which graders would find, select and apply for assignments to grade.</p>
+							<p>I led my team in designing a grader experience that was flexible for the full spectrum of users and easy for The Graide Network’s developers to immediately implement for the upcoming school year. Our solution was designed to fit into the busy schedules of college students, while also guiding them through a process of grading assignments that was informed by research into how experienced teachers grade.</p>
+						</section>
+						<section>
+							<h4>What</h4>
+							<p>In all the talk of the importance of education and of good teachers, we often think that the bulk of work as a teacher is in time spent with students, educating and building relationships. In reality, teaching is only half. The harder, less romantic work is in assessing students to gauge learning. Grading is essential for measuring student progress and a large part of the work a teacher does, but it usually occurs after hours, on weekends and between class periods—assuming there aren’t other work and life obligations.</p>
+							<p>Even for aspiring teachers majoring in education in college, grading doesn’t play as crucial of a role in teacher training. Students log field hours in the classroom shadowing teachers, but they don’t follow them home to watch them grade. When interviewing teachers, my team found that grading was one of the most time consuming and stressful parts of the job.</p>
+						</section>
+						<section>
+							<h4>Constraints</h4>
+							<ol class="u-ordernumber">
+								<li>2.5 weeks</li>
+								<li>Our client finalized their in-house dev team during the project so we met with them to align our deliverables with their priorities.</li>
+								<li>The next school year was roughly a month away and the client wanted to build out our changes as soon as possible. We adopted our design strategy to accommodate an Agile workflow and deliver a usability tested MVP design with a roadmap for future product improvements that we had also tested.</li>
+							</ol>
+						</section>
+					</div>
+				</div>
 				<section>
 					<div class="section persist-area">
 						<div class="section-content">
-	       			<div class="section-header-wrapper">
-	    			<div class="section-header"><h3 class="u-open">Research</h3></div>
-	    			</div>					
-    				<div class="blockstyle">
-						<div class="hangingquote">&ldquo;</div>
-						<blockquote>How do you create value for the graders?</blockquote>
+							<div class="section-header-wrapper">
+								<div class="section-header"><h3 class="u-open u-marginAn">Research</h3></div>
+							</div>
+							<div class="blockstyle">
+								<div class="hangingquote">&ldquo;</div>
+							<blockquote>How do you create value for the graders?</blockquote>
+						</div>
+						<h4>Meet the user’s needs and teach them something new</h4>
+						<p>This was our central question. The value of The Graide Network was obvious to teachers: free help with grading assignments. What was less clear to us was what motivated already busy college students to grade papers in their free time. We were somewhat skeptical of the motivations of the graders, but wanted to approach our research with an open mind.</p>
+						<p>Our research had three goals to discover:
+							<ul class="u-bullets">
+								<li>What younger and veteran teachers wish they had known about grading before becoming teachers so that we could implement their grading knowledge into the grading flow for TGN. </li>
+								<li>What motivates our users as aspiring teachers and to create a platform that met their career aspirations.</li>
+								<li>How to fit the user’s personal goals and needs into a product that made the actual work of grading for TGN easy and educational.</li>
+							</ul>
+						</p>
+						<p>We began by interviewing a combination of the best, worst and average graders from the pilot year and the most active veteran teacher who had used The Graide Network. We also interviewed current and recent teachers who had 6 or fewer years of experience. We chose to focus on younger teachers because we reasoned that they would be able to better empathize with and understand college students. We also assumed they would be able to more accurately recall their first few years teaching and the struggles that they encountered in grading workload, flow and strategy. The teachers taught at a variety of schools, including public schools in lower income neighborhoods, charter schools and elite private schools.</p>
 					</div>
-					<h4>Meet the user’s needs and teach them something new</h4>
-					<p>This was our central question. The value of The Graide Network was obvious to teachers: free help with grading assignments. What was less clear to us was what motivated already busy college students to grade papers in their free time. We were somewhat skeptical of the motivations of the graders, but wanted to approach our research with an open mind.</p>
-					<p>Our research had three goals to discover:
-						<ul class="u-bullets">
-							<li>What younger and veteran teachers wish they had known about grading before becoming teachers so that we could implement their grading knowledge into the grading flow for TGN. </li>
-							<li>What motivates our users as aspiring teachers and to create a platform that met their career aspirations.</li>
-							<li>How to fit the user’s personal goals and needs into a product that made the actual work of grading for TGN easy and educational.</li>
+				</div>
+				<div class="section persist-area">
+					<div class="section-content">
+						<div class="section-header-wrapper">
+							<div class="section-header"><h3 class="u-open u-marginAn">The Problem</h3></div>
+						</div>
+						<img src="img/tgn/tgn_board.jpg" alt="Post-It sorting" class="case-imgback">
+						<p>After analyzing all the data from our interviews, we arrived at the following problem statement and design principles. We captured the essence of the graders’ motivations as users, for their careers and the things they didn't know about teaching that we wanted to try to incorporate into the TGN experience. We also cast a vision for the user experience across skill and experience levels that we identified among our interviewees.</p>
+						<h4>Problem Statement</h4>
+						<div>
+							<p>The current process on The Graide Network does not provide the educational resources, information about assignments and feedback necessary to give all graders the confidence to tackle and successfully grade any assignment.</p>
+						</div>
+						<h4>Design Principles</h4>
+						<ul class="u-indent">
+							<li>
+								<h6 class="u-open">Foster mentorship</h6>
+								<p>Encourage graders to build relationships for guidance, growth and improvement</p>
+							</li>
+							<li>
+								<h6 class="u-open">Cultivate teachers</h6>
+								<p>Educate aspiring teachers with hands-on experience in a lower-pressure environment</p>
+							</li>
+							<li>
+								<h6 class="u-open">Feedback-oriented</h6>
+								<p>Feedback from the site, from teachers and from TGN</p>
+							</li>
+							<li>
+								<h6 class="u-open">Streamlined and digestible</h6>
+								<p>Only provide the essentials and don’t distract the user</p>
+							</li>
+							<li>
+								<h6 class="u-open">Promote mutual value</h6>
+								<p>TGN should be an ecosystem that provides value for everyone: students, teachers and graders</p>
+							</li>
 						</ul>
-					</p>
-					<p>We began by interviewing a combination of the best, worst and average graders from the pilot year and the most active veteran teacher who had used The Graide Network. We also interviewed current and recent teachers who had 6 or fewer years of experience. We chose to focus on younger teachers because we reasoned that they would be able to better empathize with and understand college students. We also assumed they would be able to more accurately recall their first few years teaching and the struggles that they encountered in grading workload, flow and strategy. The teachers taught at a variety of schools, including public schools in lower income neighborhoods, charter schools and elite private schools.</p>
-					</div>
-					</div>
-					<div class="section persist-area">
-						<div class="section-content">
-	       			<div class="section-header-wrapper">
-	    			<div class="section-header"><h3 class="u-open">The Problem</h3></div>
-	    			</div>	
-					<img src="img/tgn/tgn_board.jpg" alt="Post-It sorting" class="case-imgback">
-					<p>After analyzing all the data from our interviews, we arrived at the following problem statement and design principles. We captured the essence of the graders’ motivations as users, for their careers and the things they didn't know about teaching that we wanted to try to incorporate into the TGN experience. We also cast a vision for the user experience across skill and experience levels that we identified among our interviewees.</p>
-					<h4>Problem Statement</h4>
-					<div class="u-callout">
-						<p>The current process on The Graide Network does not provide the educational resources, information about assignments and feedback necessary to give all graders the confidence to tackle and successfully grade any assignment.</p>
-					</div> 
-					<h4>Design Principles</h4>
-					<ul class="u-callout">
-						<li>
-							<h6 class="u-open">Foster mentorship</h6>
-							<p>Encourage graders to build relationships for guidance, growth and improvement</p>
-						</li>
-						<li>
-							<h6 class="u-open">Cultivate teachers</h6>
-							<p>Educate aspiring teachers with hands-on experience in a lower-pressure environment</p>
-						</li>
-						<li>
-							<h6 class="u-open">Feedback-oriented</h6>
-							<p>Feedback from the site, from teachers and from TGN</p>
-						</li>
-						<li>
-							<h6 class="u-open">Streamlined and digestible</h6>
-							<p>Only provide the essentials and don’t distract the user</p>
-						</li>
-						<li>
-							<h6 class="u-open">Promote mutual value</h6>
-							<p>TGN should be an ecosystem that provides value for everyone: students, teachers and graders</p>
-						</li>
-					</ul>
-					<h4>Moving away from &#8216;Personas&#8217;</h4>
-					<p>Because we had a narrowly defined user base, our team found traditional personas less useful as a tool for empathy. Instead, we found that there were three independent spectrums, regardless of success or difficulty as a TGN grader, that were important for understanding our users.</p>
-					<img src="img/tgn/tgn_spectrum.png" alt="TGN user spectrums" class="case-imgback">
-					<h4>Designing for an update path</h4>
-					<p>When we came up with initial concept ideas, we divided up our designs strategically to test prototypes of varying degrees of complexity. In our competitive analysis, we looked at major players in grading and education and found that there was a variety of tools for grading that focused on integrated rubrics and grading in a dashboard that allowed for direct commenting on assignments.</p>
-					<p>Between the three of us on the team, we established a bare minimum of requirements for features and user considerations. We tested three prototypes of increasing complexity and automation for grading and less effort for manual data entry from the grader.</p>
+						<h4>Moving away from &#8216;Personas&#8217;</h4>
+						<p>Because we had a narrowly defined user base, our team found traditional personas less useful as a tool for empathy. Instead, we found that there were three independent spectrums, regardless of success or difficulty as a TGN grader, that were important for understanding our users.</p>
+						<img src="img/tgn/tgn_spectrum.png" alt="TGN user spectrums" class="case-imgback">
+						<h4>Designing for an update path</h4>
+						<p>When we came up with initial concept ideas, we divided up our designs strategically to test prototypes of varying degrees of complexity. In our competitive analysis, we looked at major players in grading and education and found that there was a variety of tools for grading that focused on integrated rubrics and grading in a dashboard that allowed for direct commenting on assignments.</p>
+						<p>Between the three of us on the team, we established a bare minimum of requirements for features and user considerations. We tested three prototypes of increasing complexity and automation for grading and less effort for manual data entry from the grader.</p>
 					</div>
 				</section>
 			</section>
 			<section class="container">
-					<div class="section persist-area">
-						<div class="section-content">
-	       			<div class="section-header-wrapper">
-	    			<div class="section-header"><h3 class="u-open">Design Considerations</h3></div>
-	    			</div>
-	    		<img src="img/tgn/tgn_flow.jpg" alt="Original user flow" class="case-imgback">	
-				<h4>Remote TAs</h4>
-				<p>When asked about having a non-teacher help them grade assignments, one of the main concerns that teachers brought up was that a grader might not have enough information about what's going on in the classroom or about individual students. From a prior UX team's research, as well as our own with teachers who had used TGN, we knew that the difference between satisfaction and dissatisfaction with a grader's grading often came down to how much information teachers gave about the assignments and class.</p>
-				<p>We needed to bridge the gap between the grader and the classroom of students they were grading. How could we provide them the information that they needed to be able to grade with the contextual knowledge and experience of a teacher in the classroom?</p>
-				<h4>Teaching teachers</h4>
-				<p>I was inspired by the Danielson Framework for Teaching, a well established rubric for measuring teachers. According to the Danielson Framework, a signifier of teaching excellence is that <i>students</i> have clear feedback on expectations and their progress, are able to assess themselves, and then are able to teach and assess other students. I required teachers seeking grading assistance from TGN to provide information that would allow the graders to better understand the goals of the assignment, the background context of the students and school, and the requirements of the assignment and grading expectations from the teacher.</p>
-				<p>This tested well with graders who wanted to know more about the context of the assignments as well as the teachers they were working with. This created more of a personal association with the teacher and an opportunity for mentorship through the built-in messaging system for questions about the assignment.</p> 
-				<h4>Understanding the user’s decision model</h4>
-				[img specific applicable details]
-				<p>Graders we interviewed expressed reservations about grading middle school or early high school assignments because it had been so long since they had themselves done such work. We realized that they were selecting what assignments to grade from their ability to imagine themselves as the students. To counter this, I included increased information about the class, grading requirements and expectations, exemplars, information about the curriculum and the teacher and school. This gave the graders more information to feel empowered and more confident about grading assignments they felt less certain about.</p>
-				<h4>College student schedules</h4>
-				[img selection page]
-				<p>Student graders apply to grade assignments, but teachers can also request them for grading. Grader priorities for applying and/or accepting assignments were based on a combination of factors, including time per assignment, grade level, subject comfort and their personal schedules.</p> 
-				</div>
-				</div>
-			</section>	
-			<section class="container">
-					<div class="section persist-area">
+				<div class="section persist-area">
 					<div class="section-content">
-       			<div class="section-header-wrapper">
-    			<div class="section-header"><h3 class="u-open">Insights</h3></div>
-    			</div>
-				<h4>What's the most you can do with the least?</h4>
-				<p>After a round of concept testing and meeting with the client to share our results, we decided to go with my concept. It was the least complex technically and the easiest to implement. In lieu of complexity and features, I focused on taking into consideration the main frustrations of the users we interviewed and what we learned from our usability heuristic analysis of the existing system. I wanted to create a flexible grading flow that accounted for the variety of types of assignments (.docs, PDFs, scanned handwritten work and Google Documents) and the variety of rubrics that teachers used to grade. This required a little more up-front work from the grader compared to other concepts we tested, but it was less work than graders had previously done. Furthermore, requiring the grader to read and manually enter in the rubric criteria before grading served as an extra guarantee that they would engage with the rubric before beginning grading. More importantly, it tested well and without hiccups and allowed for the most flexibility.</p>
-				<img src="img/tgn/tgn_userwork.jpg" alt="Engaging the user" class="case-imgback">
-				<h4>Minimize distraction</h4> 
-				<h5>A clear, linear user flow</h5>
-				<img src="img/tgn/tgn_flowimprove.jpg" alt="Improved user flow" class="case-imgback">
-				<p>I wanted to reduce cognitive load on the user by putting all relevant information on the same pages with tabbed navigation. For each student, the grader could enter all rubric scores and comments on a single page and reference the rubric and relevant assignment information. The goal was to keep the user on as few pages as possible to let them focus on the actual task of grading.</p>
-				<div class="bss-slides">
-					<figure>
-						<img src="img/tgn/tgn_linear1.jpg" width="100%" />
-						<figcaption>Student, class statistics and grading resources available at all times</figcaption>
-					</figure>
-					<figure>
-						<img src="img/tgn/tgn_linear2.jpg" width="100%" />
-						<figcaption>Student, class statistics and grading resources available at all times</figcaption>
-					</figure>
-					<figure>
-						<img src="img/tgn/tgn_linear3.jpg" width="100%" />
-						<figcaption>Student, class statistics and grading resources available at all times</figcaption>
-					</figure>
-				</div>
-				<h4>Feedback, Feedback, Feedback</h4>
-				<h5>Side column roster</h5>
-				<img src="img/tgn/tgn_checkmark.jpg" alt="" class="case-imgleft"><p>Previously, graders had to manually enter each student’s name into a spreadsheet before grading. Instead, the roster autopopulates and the teacher has the option to include notes about each student as applicable. As the grader works through the class, they can see which students they’ve graded and which they opened but didn’t finish grading as indicated by checkmarks.</p>
-				<h5>Reviewing the class</h5>
-				<p>For each section of students, graders are asked to mark which students are exemplars as the best and worst students. Graders have access to who they’ve bookmarked as notable students while grading. After finishing grading the entire section, they’re asked to rank the students that were best and most needing of improvement again so they can go back through all the students and reconsider. This information helps them ensure they’re grading fairly across the class for this assignment, provides valuable data for the teacher when they receive the graded assignments, and works toward providing data on individual students for future assignments with The Graide Network. </p>
-				<h4>Time Management</h4>
-				[img righthand timers] 
-				<figcaption>modals with time, progress tracking and time remaining until an assignment was due. </figcaption>
-				<p>	The largest obstacle for everyone we interviewed, from teachers to student graders, was time management. Teachers don’t have enough time in the day to do all their work. College students are notoriously poor at time management. Further, we found that the average time a grader spent on an assignment (30-90 minutes per student) was <i>significantly</i> longer than what the average teacher spent on even much longer assignments (10-30 minutes).</p>
-				<h4>Communication</h4>
-				<h5>Creating an environment of open communication and mentorship</h5>
-				[img contact teacher]
-				<p>Before grading an assignment, the grader had an estimate of per assignment time defined by the teacher. This is a goal for the grader and they are provided with a timer per assignment, their average grading time and feedback on their progress for the entire class.</p>
-				<h4>Doublechecking</h4>
-				<h5>Checkpoints to guide and teach the user through the process of grading</h5>
-				[img modal, repeated info, final check]
-				<p>Throughout the flow, graders were required to confirm they had reviewed all the provided assets. The same information is presented in a similar format to reinforce familiarity and make it easier to find and reference the same information.</p>
-				<p>Even if the grader clicked their way through every screen, once they’re actually grading assignments, the same information they were supposed to read was always a click away in an Assignment Info tab, including requirements and special instructions from the teacher and any files for grading that might have been lost.</p>
-				<h4>Familiar and consistent design for current users</h4>
-				<p>Since we were only designing for one part of the experience for half of the users, it was crucial that the designs remain in line with familiar interaction and layout patterns.</p>
-				<h4>Concept Testing</h4>
-				<p>Moving forward with my design, we integrated features from the two other concepts that tested well with users and bundled the rest of the features from the other concepts into our feature update roadmap for their development team.</p>
-				<a class="case-button u-center" href="https://invis.io/KJ7Y4ZRHV" title="View The Graide Network Prototype (InVision)">See the Prototype</a>
-				</div>
+						<div class="section-header-wrapper">
+							<div class="section-header"><h3 class="u-open u-marginAn">Design Considerations</h3></div>
+						</div>
+						<img src="img/tgn/tgn_flow.jpg" alt="Original user flow" class="case-imgback">
+						<h4>Remote TAs</h4>
+						<p>When asked about having a non-teacher help them grade assignments, one of the main concerns that teachers brought up was that a grader might not have enough information about what's going on in the classroom or about individual students. From a prior UX team's research, as well as our own with teachers who had used TGN, we knew that the difference between satisfaction and dissatisfaction with a grader's grading often came down to how much information teachers gave about the assignments and class.</p>
+						<p>We needed to bridge the gap between the grader and the classroom of students they were grading. How could we provide them the information that they needed to be able to grade with the contextual knowledge and experience of a teacher in the classroom?</p>
+						<h4>Teaching teachers</h4>
+						<p>I was inspired by the Danielson Framework for Teaching, a well established rubric for measuring teachers. According to the Danielson Framework, a signifier of teaching excellence is that <i>students</i> have clear feedback on expectations and their progress, are able to assess themselves, and then are able to teach and assess other students. I required teachers seeking grading assistance from TGN to provide information that would allow the graders to better understand the goals of the assignment, the background context of the students and school, and the requirements of the assignment and grading expectations from the teacher.</p>
+						<p>This tested well with graders who wanted to know more about the context of the assignments as well as the teachers they were working with. This created more of a personal association with the teacher and an opportunity for mentorship through the built-in messaging system for questions about the assignment.</p>
+						<h4>Understanding the user’s decision model</h4>
+						[img specific applicable details]
+						<p>Graders we interviewed expressed reservations about grading middle school or early high school assignments because it had been so long since they had themselves done such work. We realized that they were selecting what assignments to grade from their ability to imagine themselves as the students. To counter this, I included increased information about the class, grading requirements and expectations, exemplars, information about the curriculum and the teacher and school. This gave the graders more information to feel empowered and more confident about grading assignments they felt less certain about.</p>
+						<h4>College student schedules</h4>
+						[img selection page]
+						<p>Student graders apply to grade assignments, but teachers can also request them for grading. Grader priorities for applying and/or accepting assignments were based on a combination of factors, including time per assignment, grade level, subject comfort and their personal schedules.</p>
+					</div>
 				</div>
 			</section>
 			<section class="container">
 				<div class="section persist-area">
 					<div class="section-content">
-       			<div class="section-header-wrapper">
-    			<div class="section-header"><h3 class="u-open">Outcome</h3></div>
-    			</div>
-				<h4>Understanding client priorities</h4>
-				<p>By testing concepts that were representative of different levels of complexity for the grading platform, we were able to provide user-tested recommendations for future revisions for their developers, even though our chosen solution required more manual input from the users. After we met with their developers, we had a better understanding of their top priorities for their database. One of the members of my team was a developer by training and under his guidance, we were able to pivot in the last few days of our project to include an information architecture chart that mapped the data fields and relationships, making it easier for their developers to implement our designs.</p>
-				<p>Tackling the information architecture also informed our future improvements roadmap with specifications on the data needs for each of those iterations to our design.</p>
-				<div class="blockstyle">
-				<div class="hangingquote">&ldquo;</div>
-					<blockquote>I wish I had this when I was a teacher</blockquote>
+						<div class="section-header-wrapper">
+							<div class="section-header"><h3 class="u-open u-marginAn">Insights</h3></div>
+						</div>
+						<h4>What's the most you can do with the least?</h4>
+						<p>After a round of concept testing and meeting with the client to share our results, we decided to go with my concept. It was the least complex technically and the easiest to implement. In lieu of complexity and features, I focused on taking into consideration the main frustrations of the users we interviewed and what we learned from our usability heuristic analysis of the existing system. I wanted to create a flexible grading flow that accounted for the variety of types of assignments (.docs, PDFs, scanned handwritten work and Google Documents) and the variety of rubrics that teachers used to grade. This required a little more up-front work from the grader compared to other concepts we tested, but it was less work than graders had previously done. Furthermore, requiring the grader to read and manually enter in the rubric criteria before grading served as an extra guarantee that they would engage with the rubric before beginning grading. More importantly, it tested well and without hiccups and allowed for the most flexibility.</p>
+						<img src="img/tgn/tgn_userwork.jpg" alt="Engaging the user" class="case-imgback">
+						<h4>Minimize distraction</h4>
+						<h5>A clear, linear user flow</h5>
+						<img src="img/tgn/tgn_flowimprove.jpg" alt="Improved user flow" class="case-imgback">
+						<p>I wanted to reduce cognitive load on the user by putting all relevant information on the same pages with tabbed navigation. For each student, the grader could enter all rubric scores and comments on a single page and reference the rubric and relevant assignment information. The goal was to keep the user on as few pages as possible to let them focus on the actual task of grading.</p>
+						<div class="bss-slides">
+							<figure>
+								<img src="img/tgn/tgn_linear1.jpg" width="100%" />
+								<figcaption>Student, class statistics and grading resources available at all times</figcaption>
+							</figure>
+							<figure>
+								<img src="img/tgn/tgn_linear2.jpg" width="100%" />
+								<figcaption>Student, class statistics and grading resources available at all times</figcaption>
+							</figure>
+							<figure>
+								<img src="img/tgn/tgn_linear3.jpg" width="100%" />
+								<figcaption>Student, class statistics and grading resources available at all times</figcaption>
+							</figure>
+						</div>
+						<h4>Feedback, Feedback, Feedback</h4>
+						<h5>Side column roster</h5>
+						<img src="img/tgn/tgn_checkmark.jpg" alt="" class="case-imgleft"><p>Previously, graders had to manually enter each student’s name into a spreadsheet before grading. Instead, the roster autopopulates and the teacher has the option to include notes about each student as applicable. As the grader works through the class, they can see which students they’ve graded and which they opened but didn’t finish grading as indicated by checkmarks.</p>
+						<h5>Reviewing the class</h5>
+						<p>For each section of students, graders are asked to mark which students are exemplars as the best and worst students. Graders have access to who they’ve bookmarked as notable students while grading. After finishing grading the entire section, they’re asked to rank the students that were best and most needing of improvement again so they can go back through all the students and reconsider. This information helps them ensure they’re grading fairly across the class for this assignment, provides valuable data for the teacher when they receive the graded assignments, and works toward providing data on individual students for future assignments with The Graide Network. </p>
+						<h4>Time Management</h4>
+						[img righthand timers]
+						<figcaption>modals with time, progress tracking and time remaining until an assignment was due. </figcaption>
+						<p>	The largest obstacle for everyone we interviewed, from teachers to student graders, was time management. Teachers don’t have enough time in the day to do all their work. College students are notoriously poor at time management. Further, we found that the average time a grader spent on an assignment (30-90 minutes per student) was <i>significantly</i> longer than what the average teacher spent on even much longer assignments (10-30 minutes).</p>
+						<h4>Communication</h4>
+						<h5>Creating an environment of open communication and mentorship</h5>
+						[img contact teacher]
+						<p>Before grading an assignment, the grader had an estimate of per assignment time defined by the teacher. This is a goal for the grader and they are provided with a timer per assignment, their average grading time and feedback on their progress for the entire class.</p>
+						<h4>Doublechecking</h4>
+						<h5>Checkpoints to guide and teach the user through the process of grading</h5>
+						[img modal, repeated info, final check]
+						<p>Throughout the flow, graders were required to confirm they had reviewed all the provided assets. The same information is presented in a similar format to reinforce familiarity and make it easier to find and reference the same information.</p>
+						<p>Even if the grader clicked their way through every screen, once they’re actually grading assignments, the same information they were supposed to read was always a click away in an Assignment Info tab, including requirements and special instructions from the teacher and any files for grading that might have been lost.</p>
+						<h4>Familiar and consistent design for current users</h4>
+						<p>Since we were only designing for one part of the experience for half of the users, it was crucial that the designs remain in line with familiar interaction and layout patterns.</p>
+						<h4>Concept testing and final designs</h4>
+						<p>Moving forward with my design, we integrated features from the two other concepts that tested well with users and bundled the rest of the features from the other concepts into our feature update roadmap for their development team.</p>
+						<a class="case-button button u-center u-40margin-top" href="https://invis.io/KJ7Y4ZRHV" title="View The Graide Network Prototype (InVision)">See the Prototype</a>
+					</div>
 				</div>
-				<p>With the tight timeline we had for this project, we were only able to schedule one round of a few usability tests with our final prototype. We tested a combination of graders who knew the old system as well as former teachers and TAs. The results were overwhelmingly positive about the intuitive and straightforward flow. The former teacher actually remarked in the middle of the test that they would’ve liked a grading platform like this when they were going through papers. This helped affirm our goals of creating a grading platform that would suit a variety of grading styles and skill levels. </p>
-				<h3>Update</h3>	
-				<p>After we wrapped up, a UI team began working on realizing our designs and the platform is currently under development, with plans to launch during the 2016-17 school year.</p>
 			</section>
-		</article>
-		<div class="container u-50per">
-			<div class="case-others">
-				<h5>Read about more of my work</h5>
-				<a href="svn.html" title="SVD Case Study">SVD case study</a>
+			<section class="container">
+				<div class="section persist-area">
+					<div class="section-content">
+						<div class="section-header-wrapper">
+							<div class="section-header"><h3 class="u-open u-marginAn">Outcome</h3></div>
+						</div>
+						<h4>Designing for the user <i>and</i> the client</h4>
+						<p>By testing concepts that were representative of different levels of complexity for the grading platform, we were able to provide user-tested recommendations for future revisions for their developers, even though our chosen solution required more manual input from the users. After we met with their developers, we had a better understanding of their top priorities for their database. One of the members of my team was a developer by training and under his guidance, we were able to pivot in the last few days of our project to include an information architecture chart that mapped the data fields and relationships, making it easier for their developers to implement our designs.</p>
+						<p>Tackling the information architecture also informed our future improvements roadmap with specifications on the data needs for each of those iterations to our design.</p>
+						<div class="blockstyle">
+							<div class="hangingquote">&ldquo;</div>
+						<blockquote>I wish I had this when I was a teacher</blockquote>
+					</div>
+					<p>With the tight timeline we had for this project, we were only able to schedule one round of a few usability tests with our final prototype. We tested a combination of graders who knew the old system as well as former teachers and TAs. The results were overwhelmingly positive about the intuitive and straightforward flow. The former teacher actually remarked in the middle of the test that they would’ve liked a grading platform like this when they were going through papers. This helped affirm our goals of creating a grading platform that would suit a variety of grading styles and skill levels.</p>
+
+					<h3>Update</h3>
+					<p>After we wrapped up, a UI team began working on realizing our designs and the platform is currently under development, with plans to launch during the 2016-17 school year.</p>
+				</section>
+			</article>
+			<div class="container">
+				<div class="case-others">
+					<h5>Read about more of my work</h5>
+					<a href="svn.html" title="SVD Case Study">SVD case study</a>
+				</div>
 			</div>
-		</div>
-	</main>
-	<footer>
-		<div class="container">
-			<div class="u-indent">
-				<p class="u-white u-40pad-top"> &copy; Nate Chang 2016</p>
-			</div>
-		</div>
-	</footer>
-		<!-- slideshow js -->
-		<script type="text/javascript" src="js/better-simple-slideshow.js"></script>
-	<script>
-	        makeBSS('.bss-slides');
-    </script>
-    </body>
+			</main>
+			<footer>
+				<div class="container">
+					<div class="u-indent">
+						<p class="u-white u-40pad-top"> &copy; Nate Chang 2016</p>
+					</div>
+				</div>
+			</footer>
+			<!-- slideshow js -->
+			<script type="text/javascript" src="js/better-simple-slideshow.js"></script>
+				<script>
+						var opts = {
+					auto : false,
+					fullScreen : true,
+					swipe : false
+					};
+					makeBSS('.bss-slides', opts);
+				// makeBSS('.bss-slides');
+				</script>
+		</body>
