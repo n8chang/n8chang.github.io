@@ -17,12 +17,12 @@ weight: 300, 300i
 /**General**/
 body{
 background: #fff;
-width: 100%;
+width: 100vw;
 font-family: 'Open-Sans', sans-serif;
 font-weight: 300;
 text-rendering: optimizeLegibility;
 font-size: 16px;
-line-height: 1.4;
+line-height: 1.3;
 color: #4a4a4a;
 }
 .container {
@@ -47,7 +47,7 @@ h3 {
 font-size: 32px;
 }
 h4 {
-font-size: 27px;
+font-size: 29px;
 margin-top: 1em;
 margin-bottom: .5em;
 }
@@ -132,6 +132,9 @@ justify-content: flex-start;
 .u-white{
 color: #fff;
 }
+.u-salmon{
+color: #f4717e;
+}
 .u-hidden{
 display: none;
 }
@@ -140,6 +143,7 @@ font-style: italic;
 }
 .u-open {
 font-family: 'Open-Sans', sans-serif;
+letter-spacing: 0;
 }
 .u-indent{
 margin-left: 60px;
@@ -432,9 +436,6 @@ max-width: 500px;
 .card-caption h4 {
 line-height: 1em;
 }
-.card a:hover{
-color: #f4717e;
-}
 /* about */
 .aboutsection {
 background: #FFCCCC;
@@ -490,24 +491,16 @@ margin-top: 100px;
 .case-article {
 padding-bottom: 60px;
 }
-/*article h2, article h3{
-margin-top: 1.4em;
-margin-bottom: 1em;
-}*/
 article h4{
 margin-top: 1em;
-margin-bottom: .5em;
+margin-bottom: .3em;
 }
 article h5{
-margin-bottom: .5em;
+margin-bottom: .3em;
 }
 article p{
 margin-bottom: 1em;
 }
-/*article figcaption{
-font-size: 14px;
-max-width: 50vw;
-}*/
 .case-subhead{
 margin: .3em auto .3em;
 text-align: center;
@@ -521,18 +514,20 @@ padding: 20px 0;
 margin: 16px 0;
 }
 .hangingquote {
-font-size: 130px;
+font-size: 110px;
+font-weight: 400;
 position: absolute;
-top: -12px;
-left: 5px;
+top: -10px;
+left: 20px;
 }
 article blockquote {
 font-family: 'Neuton', serif;
 font-style: italic;
 letter-spacing: .02em;
-font-size: 48px;
-margin-left: 60px;
-margin-right: 16px;
+font-size: 50px;
+margin-left: 62px;
+margin-right: 8px;
+line-height: 1;	
 }
 .case-summary {
 background: #eee;
@@ -581,7 +576,7 @@ h3 {
 font-size: 30px;
 }
 h4 {
-font-size: 24px;
+font-size: 26px;
 }
 .hero-subhead {
 font-size: 20px;
@@ -650,7 +645,7 @@ background-color: rgba(221, 221, 221, 0.95);
 position: fixed;
 top: 46px;
 left: 0;
-padding: 5px 10px;
+padding: 5px 0;
 z-index: 1000;
 width: 100%;
 }
@@ -692,14 +687,11 @@ padding: 0px 20px;
 /*case style*/
 .hangingquote {
 font-size: 100px;
-position: absolute;
-top: -12px;
-left: 5px;
+top: 0px;
 }
 article blockquote {
 font-size: 48px;
 margin-left: 60px;
-margin-right: 16px;
 }
 .case-summary {
 padding: 25px 0;
@@ -727,10 +719,14 @@ font-size: 18px;
 width: 300px;
 }
 /*case style*/
+.hangingquote {
+font-size: 70px;
+top: -4px;
+}
 article blockquote {
 font-size: 28px;
-margin-left: 46px;
-margin-right: 16px;
+margin-left: 48px;
+margin-right: 12px;
 }
 .case-summary {
 padding: 25px 0;
