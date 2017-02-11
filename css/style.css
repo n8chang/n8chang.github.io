@@ -600,6 +600,7 @@ font-size: 22px;
 }
 .container{
 width: 80vw;
+max-width: 80vw;
 }
 .u-60per {
 width: 80%;
@@ -676,6 +677,18 @@ margin-top: 0;
 margin-right: 4%;
 padding-bottom: 0;
 }
+.card-title {
+top: 10px;
+left: 0;
+margin-left: 15px;
+padding: 10px 20px 5px;
+}
+.card-caption {
+bottom: 0;
+left: 0;
+margin-left: 15px;
+padding: 0px 20px;
+}
 /*case style*/
 .hangingquote {
 font-size: 100px;
@@ -698,6 +711,11 @@ padding: 1vw;
 .case-imgright{
 width: 40%;
 padding: 1vw;
+}
+}
+@media screen and (max-width: 600px){
+.aboutpic {
+	float: none;
 }
 }
 /*Mobile break*/
