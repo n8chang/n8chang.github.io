@@ -597,10 +597,9 @@ height: 100px;
 .container {
 width: 70vw;
 max-width: 70vw;
-margin-left: 200px;
 }
 }
-@media screen and (max-device-width: 900px){
+@media screen and (max-width: 900px){
 /* Text styles */
 h1 {
 font-size: 44px;
@@ -632,7 +631,6 @@ font-size: 22px;
 .container{
 width: 80vw;
 max-width: 80vw;
-margin: 0 auto;
 }
 .u-60per {
 width: 80%;
@@ -664,7 +662,7 @@ transition: all 0.5s cubic-bezier(0.1, 0.51, 0.21, 1.01);
 }
 .sticky {
 background-color: rgba(221, 221, 221, 0.95);
-width: 100%;
+
 }
 .sticky h3, .sticky h2 {
 font-size: 22px;
@@ -673,6 +671,7 @@ text-align: center;
 .sticky-active {
 top: 46px;
 left: 0;
+width: 100%;
 }
 .sticky-parked {
 bottom: -20px;
@@ -726,10 +725,7 @@ width: 40%;
 padding: 1vw;
 }
 }
-@media screen and (max-device-width: 600px){
-.container {
-margin: 0 auto;
-}
+@media screen and (max-width: 600px){
 .aboutpic {
 float: none;
 }
@@ -744,7 +740,7 @@ font-size: 20px;
 }
 }
 /*Mobile break*/
-@media screen and (max-device-width: 500px){
+@media screen and (max-width: 500px){
 .sticky h3, .sticky h2{
 font-size: 18px;
 }
