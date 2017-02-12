@@ -215,7 +215,7 @@ margin-left: 22px;
 /*sticky fingers*/
 .section-content {
 position: relative;
-margin-bottom: 60px;
+margin-bottom: 2em;
 }
 .section
 {
@@ -542,7 +542,35 @@ padding: 25px 0;
 width: 98%;
 margin-left: 50%;
 transform: translateX(-50%);
-padding: 1%;
+padding: 7px 0;
+background-color: #eee;
+}
+.case-imgscroll {
+height: 50vh;
+overflow-y: scroll;
+}
+.case-imgscroll-img{
+width: 100%;
+}
+.case-caption {
+width: 100%;
+background: #eee;
+font-size: 16px;
+padding-top: 2px;
+padding-bottom: 3px;
+margin-bottom: 1em;
+}
+.case-caption p{
+text-align: center;
+margin-top: .2em;
+margin-bottom: .5em;
+}
+.case-imgscroll-container {
+display: inline-block;
+margin-left: 50%;
+transform: translateX(-50%);
+width: 96%;
+padding: 2%;
 background-color: #eee;
 }
 .case-imgleft{
@@ -569,7 +597,14 @@ height: 100px;
 }
 /********************* Responsivable tings *********************/
 /*Tablet 875px width*/
-@media screen and (max-width: 875px){
+@media screen and (max-width: 1000px) {
+.container {
+width: 70vw;
+max-width: 80vw;
+margin-left: 200px;
+}
+}
+@media screen and (max-width: 900px){
 /* Text styles */
 h1 {
 font-size: 44px;
@@ -601,6 +636,7 @@ font-size: 22px;
 .container{
 width: 80vw;
 max-width: 80vw;
+margin-left: 60px;
 }
 .u-60per {
 width: 80%;
@@ -714,6 +750,9 @@ padding: 1vw;
 }
 }
 @media screen and (max-width: 600px){
+.container {
+	margin: 0 auto;
+}
 .aboutpic {
 	float: none;
 }
