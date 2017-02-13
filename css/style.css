@@ -561,8 +561,6 @@ margin-bottom: .5em;
 }
 .case-imgscroll-container {
 display: inline-block;
-margin-left: 50%;
-transform: translateX(-50%);
 width: 96%;
 padding: 2%;
 background-color: #eee;
@@ -660,7 +658,7 @@ transition: all 0.5s cubic-bezier(0.1, 0.51, 0.21, 1.01);
 }
 .sticky {
 background-color: rgba(221, 221, 221, 0.95);
-
+width: 100%;
 }
 .sticky h3, .sticky h2 {
 font-size: 22px;
@@ -669,7 +667,6 @@ text-align: center;
 .sticky-active {
 top: 46px;
 left: 0;
-width: 100%;
 }
 .sticky-parked {
 bottom: -20px;
