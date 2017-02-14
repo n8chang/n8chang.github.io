@@ -445,6 +445,7 @@ vertical-align: text-top;
 .aboutpic {
 position: relative;
 display: inline;
+float: left;
 width: 250px;
 height: 350px;
 margin: 0 20px 5px 0;
@@ -716,8 +717,10 @@ padding: 1vw;
 }
 }
 @media screen and (max-width: 600px){
-.aboutpic {
-float: none;
+.responsiveclearfix:after {
+content: '';
+display: table;
+clear: both;
 }
 .card-title {
 font-size: 22px;
